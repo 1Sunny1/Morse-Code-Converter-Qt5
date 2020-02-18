@@ -143,7 +143,7 @@ void MainWindow::on_textEdit_textChanged()
         char lastCharacter = stdText[stdText.length() - 1];
         if (isspace(lastCharacter))
             ui->textEdit_2->insertPlainText("     ");
-
+//jajaja
         ui->textEdit_2->insertPlainText(morseCodes[toupper(lastCharacter)] + "  "); //nothing important is being lost due to implicit conversion!
     }
 }
