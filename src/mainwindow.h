@@ -2,10 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <unordered_map>
-#include <string>
-#include <QString>
-#include <QChar>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -40,38 +36,11 @@ private slots:
     void on_pushButton_18_clicked();
     void on_pushButton_19_clicked();
     void on_pushButton_20_clicked();
+
     void on_userText_textChanged();
-    void convertToMorseCode();
 
 private:
     Ui::MainWindow *ui;
-    std::unordered_map<char, QString> morseCodes {
-    { ':', "___..." }, { '8', "___.."   },
-    { '0', "_____"  }, { 'Q', "__._"    },
-    { 'A', "._"     }, { 'D', "_.."     },
-    { 'O', "___"    }, { '_', "..__._"  },
-    { 'N', "_."     }, { 'R', "._."     },
-    { 'B', "_..."   }, { 'E', "."       },
-    { 'S', "..."    }, { 'C', "_._."    },
-    { '/', "_.._."  }, { 'P', ".__."    },
-    { '(', "_.__."  }, { 'F', ".._."    },
-    { 'G', "__."    }, { '.', "._._._"  },
-    { 'T', "_"      }, { ')', "_.__._"  },
-    { 'H', "...."   }, { 'Y', "_.__"    },
-    { 'U', ".._"    }, { '9', "____."   },
-    { 'K', "_._"    }, { 'I', ".."      },
-    { 'V', "..._"   }, { 'J', ".___"    },
-    { '"', "._.._." }, { '7', "__..."   },
-    { 'X', "_.._"   }, { 'W', ".__"     },
-    { '6', "_...."  }, { 'L', "._.."    },
-    { '?', "..__.." }, { 'M', "__"      },
-    { '-', "_...._" }, { 'Z', "__.."    },
-    { '1', ".____"  }, { '2', "..___"   },
-    { '!', "_._.__" }, { '3', "...__"   },
-    { '@', ".__._." }, { '4', "...._"   },
-    { '5', "....."  }, { '=', "_..._"   },
-    { ',', "__..__" }, { '\'', ".____." },
-    { '+', "._._."  }, { ';', "_._._."  } };
 
 };
 #endif // MAINWINDOW_H
