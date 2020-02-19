@@ -33,11 +33,14 @@ std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 QString MorseCodeConverter::TextToCode(const QString &text) {
     QString converted{""};
     for (const auto &character : text.toStdString()) {
+        if (isspace(character))
+            converted.append("    ");
+
         if (auto found = std::find_if(
                 morseCodes.begin(), morseCodes.end(),
                 [&character](const auto &value) { return toupper(character) == value.first; });
             found != morseCodes.end())
-            converted.append(found->second);
+            converted.append(found->second + "  ");
     }
     return converted;
 }
