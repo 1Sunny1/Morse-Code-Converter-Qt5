@@ -40,8 +40,8 @@ private slots:
     void on_pushButton_18_clicked();
     void on_pushButton_19_clicked();
     void on_pushButton_20_clicked();
-
-    void on_textEdit_textChanged();
+    void on_userText_textChanged();
+    void convertToMorseCode();
 
 private:
     Ui::MainWindow *ui;

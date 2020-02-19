@@ -18,132 +18,137 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_1_clicked()
 {
-    ui->textEdit->insertPlainText("1");
-    ui->textEdit_2->insertPlainText(morseCodes['1']);
+    ui->userText->insertPlainText("1");
+    ui->convertedText->insertPlainText(morseCodes['1']);
 }
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->textEdit->insertPlainText("2");
-    ui->textEdit_2->insertPlainText(morseCodes['2']);
+    ui->userText->insertPlainText("2");
+    ui->convertedText->insertPlainText(morseCodes['2']);
 }
 
 void MainWindow::on_pushButton_3_clicked()
 {
-    ui->textEdit->insertPlainText("3");
-    ui->textEdit_2->insertPlainText(morseCodes['3']);
+    ui->userText->insertPlainText("3");
+    ui->convertedText->insertPlainText(morseCodes['3']);
 }
 
 void MainWindow::on_pushButton_4_clicked()
 {
-    ui->textEdit->insertPlainText("4");
-    ui->textEdit_2->insertPlainText(morseCodes['4']);
+    ui->userText->insertPlainText("4");
+    ui->convertedText->insertPlainText(morseCodes['4']);
 }
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    ui->textEdit->insertPlainText("5");
-    ui->textEdit_2->insertPlainText(morseCodes['5']);
+    ui->userText->insertPlainText("5");
+    ui->convertedText->insertPlainText(morseCodes['5']);
 }
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    ui->textEdit->insertPlainText("6");
-    ui->textEdit_2->insertPlainText(morseCodes['6']);
+    ui->userText->insertPlainText("6");
+    ui->convertedText->insertPlainText(morseCodes['6']);
 }
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    ui->textEdit->insertPlainText("7");
-    ui->textEdit_2->insertPlainText(morseCodes['7']);
+    ui->userText->insertPlainText("7");
+    ui->convertedText->insertPlainText(morseCodes['7']);
 }
 
 void MainWindow::on_pushButton_8_clicked()
 {
-    ui->textEdit->insertPlainText("8");
-    ui->textEdit_2->insertPlainText(morseCodes['8']);
+    ui->userText->insertPlainText("8");
+    ui->convertedText->insertPlainText(morseCodes['8']);
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
-    ui->textEdit->insertPlainText("9");
-    ui->textEdit_2->insertPlainText(morseCodes['9']);
+    ui->userText->insertPlainText("9");
+    ui->convertedText->insertPlainText(morseCodes['9']);
 }
 
 void MainWindow::on_pushButton_10_clicked()
 {
-    ui->textEdit->insertPlainText("0");
-    ui->textEdit_2->insertPlainText(morseCodes['0']);
+    ui->userText->insertPlainText("0");
+    ui->convertedText->insertPlainText(morseCodes['0']);
 }
 
 void MainWindow::on_pushButton_11_clicked()
 {
-    ui->textEdit->insertPlainText("Q");
-    ui->textEdit_2->insertPlainText(morseCodes['Q']);
+    ui->userText->insertPlainText("Q");
+    ui->convertedText->insertPlainText(morseCodes['Q']);
 }
 
 void MainWindow::on_pushButton_12_clicked()
 {
-    ui->textEdit->insertPlainText("W");
-    ui->textEdit_2->insertPlainText(morseCodes['W']);
+    ui->userText->insertPlainText("W");
+    ui->convertedText->insertPlainText(morseCodes['W']);
 }
 
 void MainWindow::on_pushButton_13_clicked()
 {
-    ui->textEdit->insertPlainText("E");
-    ui->textEdit_2->insertPlainText(morseCodes['E']);
+    ui->userText->insertPlainText("E");
+    ui->convertedText->insertPlainText(morseCodes['E']);
 }
 
 void MainWindow::on_pushButton_14_clicked()
 {
-    ui->textEdit->insertPlainText("R");
-    ui->textEdit_2->insertPlainText(morseCodes['R']);
+    ui->userText->insertPlainText("R");
+    ui->convertedText->insertPlainText(morseCodes['R']);
 }
 
 void MainWindow::on_pushButton_15_clicked()
 {
-    ui->textEdit->insertPlainText("T");
-    ui->textEdit_2->insertPlainText(morseCodes['T']);
+    ui->userText->insertPlainText("T");
+    ui->convertedText->insertPlainText(morseCodes['T']);
 }
 
 void MainWindow::on_pushButton_16_clicked()
 {
-    ui->textEdit->insertPlainText("Y");
-    ui->textEdit_2->insertPlainText(morseCodes['Y']);
+    ui->userText->insertPlainText("Y");
+    ui->convertedText->insertPlainText(morseCodes['Y']);
 }
 
 void MainWindow::on_pushButton_17_clicked()
 {
-    ui->textEdit->insertPlainText("U");
-    ui->textEdit_2->insertPlainText(morseCodes['U']);
+    ui->userText->insertPlainText("U");
+    ui->convertedText->insertPlainText(morseCodes['U']);
 }
 
 void MainWindow::on_pushButton_18_clicked()
 {
-    ui->textEdit->insertPlainText("I");
-    ui->textEdit_2->insertPlainText(morseCodes['I']);
+    ui->userText->insertPlainText("I");
+    ui->convertedText->insertPlainText(morseCodes['I']);
 }
 
 void MainWindow::on_pushButton_19_clicked()
 {
-    ui->textEdit->insertPlainText("O");
-    ui->textEdit_2->insertPlainText(morseCodes['O']);
+    ui->userText->insertPlainText("O");
+    ui->convertedText->insertPlainText(morseCodes['O']);
 }
 
 void MainWindow::on_pushButton_20_clicked()
 {
-    ui->textEdit->insertPlainText("P");
-    ui->textEdit_2->insertPlainText(morseCodes['P']);
+    ui->userText->insertPlainText("P");
+    ui->convertedText->insertPlainText(morseCodes['P']);
 }
 
-void MainWindow::on_textEdit_textChanged()
+void MainWindow::on_userText_textChanged()
 {
-    std::string stdText = ui->textEdit->toPlainText().toStdString();
-    if (!stdText.empty()) {
-        char lastCharacter = stdText[stdText.length() - 1];
-        if (isspace(lastCharacter))
-            ui->textEdit_2->insertPlainText("     ");
-//jajaja
-        ui->textEdit_2->insertPlainText(morseCodes[toupper(lastCharacter)] + "  "); //nothing important is being lost due to implicit conversion!
+    convertToMorseCode();
+}
+
+void MainWindow::convertToMorseCode() {
+    ui->convertedText->clear();
+    std::string stdText = ui->userText->toPlainText().toStdString();
+    for (const auto &character : stdText) {
+        if (auto found = std::find_if(
+                morseCodes.begin(), morseCodes.end(),
+                [&character](const auto &value) { return toupper(character) == value.first; });
+            found != morseCodes.end())
+            ui->convertedText->insertPlainText((found->second) + "  ");
     }
 }

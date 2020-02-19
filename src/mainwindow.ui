@@ -528,7 +528,7 @@ QPushButton:pressed {
      </item>
     </layout>
    </widget>
-   <widget class="QTextEdit" name="textEdit_2">
+   <widget class="QTextEdit" name="convertedText">
     <property name="geometry">
      <rect>
       <x>580</x>
@@ -547,7 +547,7 @@ QPushButton : hover {
 }</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="textEdit">
+   <widget class="QTextEdit" name="userText">
     <property name="geometry">
      <rect>
       <x>70</x>
