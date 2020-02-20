@@ -1,5 +1,5 @@
 #include "MorseCodeConverter.h"
-#include <string>
+#include <algorithm>
 
 std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 { ':', "___..." }, { '8', "___.."   },
@@ -30,15 +30,25 @@ std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 { '+', "._._."  }, { ';', "_._._."  }
 };
 
-QString MorseCodeConverter::TextToCode(const QString &text) {
+std::string MorseCodeConverter::ExcludeSpecialCharacters(std::string && sample) {
+    sample.erase(std::remove_if(sample.begin(), sample.end(),
+                                [](const auto &character) {
+                                  return character < 33 || character > 125;
+                                }), sample.end());
+    sample.shrink_to_fit();
+    return std::move(sample);
+}
+
+QString MorseCodeConverter::TextToCode(const std::string &text) {
     QString converted{""};
-    for (const auto &character : text.toStdString()) {
+    for (const auto &character : text) {
         if (isspace(character))
             converted.append("    ");
 
-        if (auto found = std::find_if(
-                morseCodes.begin(), morseCodes.end(),
-                [&character](const auto &value) { return toupper(character) == value.first; });
+        if (auto found = std::find_if(morseCodes.begin(), morseCodes.end(),
+                                      [&character](const auto &value) {
+                                        return toupper(character) == value.first;
+                                      });
             found != morseCodes.end())
             converted.append(found->second + "  ");
     }

@@ -97,6 +97,6 @@ void MainWindow::on_pushButton_20_clicked() {
 
 void MainWindow::on_userText_textChanged() {
    ui->convertedText->clear();
-   ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(ui->userText->toPlainText()));
+   ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(MorseCodeConverter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
 }
 
