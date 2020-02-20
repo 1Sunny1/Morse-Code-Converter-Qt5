@@ -30,7 +30,7 @@ std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 { '+', "._._."  }, { ';', "_._._."  }
 };
 
-std::string MorseCodeConverter::ExcludeSpecialCharacters(std::string && sample) {
+std::string MorseCodeConverter::ExcludeSpecialCharacters(std::string &&sample) noexcept {
     sample.erase(std::remove_if(sample.begin(), sample.end(),
                                 [](const auto &character) {
                                   return character < 33 || character > 125;
@@ -39,7 +39,7 @@ std::string MorseCodeConverter::ExcludeSpecialCharacters(std::string && sample) 
     return std::move(sample);
 }
 
-QString MorseCodeConverter::TextToCode(const std::string &text) {
+QString MorseCodeConverter::TextToCode(const std::string &text) noexcept {
     QString converted{""};
     for (const auto &character : text) {
         if (isspace(character))

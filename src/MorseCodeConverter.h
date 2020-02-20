@@ -4,11 +4,11 @@
 #include <QString>
 #include <string>
 
-class MorseCodeConverter {
+class MorseCodeConverter final {
 public:
-    explicit MorseCodeConverter() = default;
-    static QString TextToCode(const std::string &);
-    static std::string ExcludeSpecialCharacters(std::string &&);
+    explicit MorseCodeConverter() = delete;
+    static QString TextToCode(const std::string &) noexcept;
+    static std::string ExcludeSpecialCharacters(std::string &&) noexcept;
 private:
     static std::unordered_map<char, QString> morseCodes;
 
