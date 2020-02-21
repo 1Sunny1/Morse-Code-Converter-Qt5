@@ -22,10 +22,10 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>280</y>
-      <width>791</width>
-      <height>191</height>
+      <x>270</x>
+      <y>270</y>
+      <width>481</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -45,7 +45,7 @@ QPushButton:pressed {
 	border: 2px solid red; border-radius: 30px;
 }</string>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
+    <layout class="QGridLayout" name="gridLayout2Lines">
      <item row="0" column="9">
       <widget class="QPushButton" name="pushButton_10">
        <property name="sizePolicy">
@@ -56,13 +56,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -80,13 +80,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -104,13 +104,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -128,13 +128,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -152,13 +152,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -176,13 +176,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -200,13 +200,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -224,13 +224,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -248,13 +248,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -272,13 +272,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -296,13 +296,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -320,13 +320,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -344,13 +344,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -368,13 +368,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -392,13 +392,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -416,13 +416,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -440,13 +440,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -464,13 +464,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -488,13 +488,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -512,13 +512,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -531,9 +531,9 @@ QPushButton:pressed {
    <widget class="QTextEdit" name="convertedText">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>30</y>
-      <width>371</width>
+      <x>570</x>
+      <y>20</y>
+      <width>401</width>
       <height>231</height>
      </rect>
     </property>
@@ -550,9 +550,9 @@ QPushButton : hover {
    <widget class="QTextEdit" name="userText">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>30</y>
-      <width>371</width>
+      <x>30</x>
+      <y>20</y>
+      <width>401</width>
       <height>231</height>
      </rect>
     </property>
@@ -569,13 +569,13 @@ QPushButton : hover {
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>480</y>
-      <width>711</width>
-      <height>111</height>
+      <x>300</x>
+      <y>380</y>
+      <width>431</width>
+      <height>61</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_3">
+    <layout class="QGridLayout" name="gridLayout3rdLine">
      <item row="0" column="1">
       <widget class="QPushButton" name="pushButton_22">
        <property name="sizePolicy">
@@ -586,13 +586,13 @@ QPushButton : hover {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -610,13 +610,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -634,17 +634,41 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
         <string>J</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QPushButton" name="pushButton_29">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>L</string>
        </property>
       </widget>
      </item>
@@ -658,13 +682,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -682,41 +706,17 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
         <string>D</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QPushButton" name="pushButton_26">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
-         <horstretch>0</horstretch>
-         <verstretch>3</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
-	font-size: 20px; font-family: Arial;
-	background-color: #f0eeee;
-}
-
-QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
-}</string>
-       </property>
-       <property name="text">
-        <string>H</string>
        </property>
       </widget>
      </item>
@@ -730,17 +730,41 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
         <string>F</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="pushButton_26">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>H</string>
        </property>
       </widget>
      </item>
@@ -754,13 +778,13 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
@@ -768,8 +792,20 @@ QPushButton:pressed {
        </property>
       </widget>
      </item>
-     <item row="0" column="8">
-      <widget class="QPushButton" name="pushButton_29">
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>450</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout4thLine">
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_35">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
          <horstretch>0</horstretch>
@@ -778,21 +814,360 @@ QPushButton:pressed {
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 20px;
+	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:pressed {
-	border: 2px solid red; border-radius: 30px;
+	border: 2px solid red;
 }</string>
        </property>
        <property name="text">
-        <string>L</string>
+        <string>X</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_36">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_33">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>V</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="pushButton_31">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>N</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_32">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>B</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QPushButton" name="pushButton_30">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="pushButton_34">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>0</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>C</string>
        </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>520</y>
+      <width>321</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout5thLine">
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_40">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>3</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_39">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>3</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>,</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_37">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>3</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="pushButton_38">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+         <horstretch>9</horstretch>
+         <verstretch>2</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>Space</string>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_41">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+         <horstretch>3</horstretch>
+         <verstretch>3</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+       </property>
+       <property name="text">
+        <string>?</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_42">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>450</y>
+      <width>51</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>3</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+    </property>
+    <property name="text">
+     <string>!#1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_43">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>450</y>
+      <width>51</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="MinimumExpanding">
+      <horstretch>0</horstretch>
+      <verstretch>3</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+}</string>
+    </property>
+    <property name="text">
+     <string>Del</string>
+    </property>
    </widget>
   </widget>
  </widget>
