@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "MorseCodeConverter.h"
 
+#include <QLayout>
 #include <QString>
 #include <utility>
 
@@ -11,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->convertedText->setReadOnly(true);
+    //ui->gridLayout2Lines->setAlignment(ui->gridLayout2Lines, Qt::AlignCenter);
 }
 
 MainWindow::~MainWindow()
