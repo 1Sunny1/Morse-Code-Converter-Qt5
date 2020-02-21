@@ -33,7 +33,7 @@ std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 std::string MorseCodeConverter::ExcludeSpecialCharacters(std::string &&sample) noexcept {
     sample.erase(std::remove_if(sample.begin(), sample.end(),
                                 [](const auto &character) {
-                                  return character < 33 || character > 125;
+                                  return character < 32 || character > 125;
                                 }), sample.end());
     sample.shrink_to_fit();
     return std::move(sample);

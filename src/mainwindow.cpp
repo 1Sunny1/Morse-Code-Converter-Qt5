@@ -3,12 +3,14 @@
 #include "MorseCodeConverter.h"
 
 #include <QString>
+#include <utility>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->convertedText->setReadOnly(true);
 }
 
 MainWindow::~MainWindow()
