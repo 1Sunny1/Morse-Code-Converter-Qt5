@@ -6,18 +6,17 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+    , ui(new Ui::MainWindow) {
     ui->setupUi(this);
     ui->convertedText->setReadOnly(true);
+
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
 void MainWindow::on_userText_textChanged() {
    ui->convertedText->clear();
-   ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(MorseCodeConverter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
+   ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
 }

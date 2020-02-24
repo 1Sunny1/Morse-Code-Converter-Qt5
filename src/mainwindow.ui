@@ -371,11 +371,15 @@ QPushButton:pressed {
 	border: 1px solid white; border-radius: 18px;
 	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
+	transition: transform 1s;
 }
 
 QPushButton:pressed {
 	border: 2px solid red;
-}</string>
+	transform: scale(0.6);
+}
+
+</string>
        </property>
        <property name="text">
         <string>Q</string>
@@ -1167,6 +1171,33 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>Del</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>322</y>
+      <width>75</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid white; border-radius: 18px;
+	font-size: 20px; font-family: Arial;
+	background-color: #f0eeee;
+	transition: transform 1s;
+}
+
+QPushButton:pressed {
+	border: 2px solid red;
+	transform: scale(0.6);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>test</string>
     </property>
    </widget>
   </widget>
