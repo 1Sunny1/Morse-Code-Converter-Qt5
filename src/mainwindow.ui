@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1007</width>
-    <height>600</height>
+    <width>1097</width>
+    <height>631</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>270</y>
+      <x>300</x>
+      <y>260</y>
       <width>481</width>
       <height>101</height>
      </rect>
@@ -535,7 +535,7 @@ QPushButton:pressed {
    <widget class="QTextEdit" name="convertedText">
     <property name="geometry">
      <rect>
-      <x>570</x>
+      <x>660</x>
       <y>20</y>
       <width>401</width>
       <height>231</height>
@@ -573,8 +573,8 @@ QPushButton : hover {
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>380</y>
+      <x>330</x>
+      <y>370</y>
       <width>431</width>
       <height>61</height>
      </rect>
@@ -801,8 +801,8 @@ QPushButton:pressed {
    <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>450</y>
+      <x>390</x>
+      <y>440</y>
       <width>321</width>
       <height>61</height>
      </rect>
@@ -981,8 +981,8 @@ QPushButton:pressed {
    <widget class="QWidget" name="gridLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>520</y>
+      <x>390</x>
+      <y>510</y>
       <width>321</width>
       <height>61</height>
      </rect>
@@ -1116,8 +1116,8 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_42">
     <property name="geometry">
      <rect>
-      <x>300</x>
-      <y>450</y>
+      <x>330</x>
+      <y>440</y>
       <width>51</width>
       <height>131</height>
      </rect>
@@ -1146,8 +1146,8 @@ QPushButton:pressed {
    <widget class="QPushButton" name="pushButton_43">
     <property name="geometry">
      <rect>
-      <x>690</x>
-      <y>450</y>
+      <x>720</x>
+      <y>440</y>
       <width>51</width>
       <height>131</height>
      </rect>
@@ -1171,33 +1171,6 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>Del</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>322</y>
-      <width>75</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	border: 1px solid white; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
-	background-color: #f0eeee;
-	transition: transform 1s;
-}
-
-QPushButton:pressed {
-	border: 2px solid red;
-	transform: scale(0.6);
-}
-</string>
-    </property>
-    <property name="text">
-     <string>test</string>
     </property>
    </widget>
   </widget>
