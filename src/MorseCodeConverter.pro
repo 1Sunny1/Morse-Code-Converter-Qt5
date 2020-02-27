@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Keyboard.cpp \
     MorseCodeConverter.cpp \
+    connectAllButtons.cpp \
     main.cpp \
     mainwindow.cpp
 
