@@ -1,12 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "MorseCodeConverter.h"
+#include "PushButtonHover.h"
 
 #include <QString>
 #include <QKeyEvent>
+#include <QIcon>
+#include <QPixmap>
+#include <QtSvg/QtSvg>
 
 namespace {
-    const QString PLACEHOLDER_TEXT{""};
+    const QString PLACEHOLDER_TEXT{"Type your message..."};
 
 }
 
@@ -20,6 +24,17 @@ MainWindow::MainWindow(QWidget *parent)
     keyboard = std::make_unique<Keyboard>(ui->userText);
     keyboard->setStackedWidget(ui->stackedWidget);
     connectAllButtons();
+
+    QIcon icon;
+    QPixmap qxm;
+    if(qxm.load(":/img/img/arrow.svg")) {
+        icon.addPixmap(qxm);
+        ui->pushButton->setIcon(icon);
+        ui->pushButton->setIconSize(QSize(60, 60));
+    }
+    else
+        ui->pushButton->setText("nope");
+
 }
 
 MainWindow::~MainWindow() {
