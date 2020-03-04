@@ -6,6 +6,7 @@
 #include <QTextEdit>
 #include <QStackedWidget>
 #include <unordered_map>
+
 class Keyboard final : public QObject {
     Q_OBJECT
 public:

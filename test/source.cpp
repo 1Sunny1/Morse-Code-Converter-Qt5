@@ -1,7 +1,6 @@
-#include "tst_ischaracterequaltocode.h"
-
 #include <gtest/gtest.h>
-
+#include "MorseCodeConverterClassTest.h"
+#include "FilterTest.h"
 int main(int argc, char *argv[])
 {
     ::testing::InitGoogleTest(&argc, argv);

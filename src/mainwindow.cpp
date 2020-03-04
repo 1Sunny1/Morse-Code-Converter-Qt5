@@ -8,6 +8,7 @@
 #include <QIcon>
 #include <QPixmap>
 #include <QtSvg/QtSvg>
+#include <QPropertyAnimation>
 
 namespace {
     const QString PLACEHOLDER_TEXT{"Type your message..."};
@@ -25,15 +26,8 @@ MainWindow::MainWindow(QWidget *parent)
     keyboard->setStackedWidget(ui->stackedWidget);
     connectAllButtons();
 
-    QIcon icon;
-    QPixmap qxm;
-    if(qxm.load(":/img/img/arrow.svg")) {
-        icon.addPixmap(qxm);
-        ui->pushButton->setIcon(icon);
-        ui->pushButton->setIconSize(QSize(60, 60));
-    }
-    else
-        ui->pushButton->setText("nope");
+    QString x = MorseCodeConverter::TextToCode("a");
+    ui->pushButton->setText(x);
 
 }
 

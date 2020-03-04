@@ -3,5 +3,5 @@ TEMPLATE = subdirs
 CONFIG+=ordered
 
 SUBDIRS = \
-    src \
-    test
+    test \
+    src
