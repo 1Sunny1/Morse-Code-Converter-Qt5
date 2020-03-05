@@ -15,24 +15,24 @@ public:
     };
 
 public:
-    explicit Keyboard() = default;
-    explicit Keyboard(QTextEdit *);
-    void connectButton(QPushButton *);
-    void setStackedWidget(QStackedWidget *);
+    explicit                Keyboard() = default;
+    explicit                Keyboard(QTextEdit *);
+    void                    connectButton(QPushButton *);
+    void                    setStackedWidget(QStackedWidget *);
 
 private slots:
-    void onButtonClick();
+    void                    onButtonClick();
 
 private:
-    void deletePreviousCharacter();
-    void triggerOtherSideOfKeyboard();
-    void initializeSpecialButtonsMap();
-    SpecialButtons manageButtonValue(QPushButton *);
+    void                    deletePreviousCharacter();
+    void                    triggerOtherSideOfKeyboard();
+    void                    initializeSpecialButtonsMap();
+    SpecialButtons          manageButtonValue(QPushButton *);
 
 private:
-    std::unique_ptr<QTextEdit> textEdit;
-    std::unique_ptr<QStackedWidget> stackedWidget;
-    std::unordered_map<SpecialButtons, QString> specialButtons;
+    std::unique_ptr<QTextEdit>                          textEdit;
+    std::unique_ptr<QStackedWidget>                     stackedWidget;
+    std::unordered_map<SpecialButtons, QString>         specialButtons;
 
 };
 

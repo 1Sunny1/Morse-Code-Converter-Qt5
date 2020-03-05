@@ -17,11 +17,11 @@ namespace Filter {
 
 class MorseCodeConverter final {
 public:
-    explicit MorseCodeConverter() = delete;
-    static QString TextToCode(const std::string &) noexcept;
+    explicit                                        MorseCodeConverter() = delete;
+    static                                          QString TextToCode(const std::string &) noexcept;
 
 private:
-    static std::unordered_map<char, QString> morseCodes;
+    static std::unordered_map<char, QString>        morseCodes;
 
 };
 

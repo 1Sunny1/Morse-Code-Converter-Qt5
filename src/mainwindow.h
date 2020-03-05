@@ -5,6 +5,7 @@
 #include <memory>
 
 #include "Keyboard.h"
+#include "AnimatedBackground.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,19 +16,21 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+                                            MainWindow(QWidget *parent = nullptr);
+                                            ~MainWindow();
 
 private slots:
-    void on_userText_textChanged();
+    void                                    on_userText_textChanged();
+
 
 private:
-    void connectAllButtons();
+    void                                    connectAllButtons();
+    void                                    connectAllLabels();
 
 private:
     Ui::MainWindow *ui;
-    std::unique_ptr<Keyboard> keyboard;
-
+    std::unique_ptr<Keyboard>               keyboard;
+    std::unique_ptr<AnimatedBackground>     animatedBG;
 };
 
 #endif // MAINWINDOW_H

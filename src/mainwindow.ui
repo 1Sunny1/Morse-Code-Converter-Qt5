@@ -49,6 +49,13 @@ QPushButton : hover {
      </layout>
     </item>
     <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>blyat</string>
+      </property>
+     </widget>
+    </item>
+    <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
        <number>0</number>
@@ -57,8 +64,8 @@ QPushButton : hover {
        <widget class="QWidget" name="gridLayoutWidget_2">
         <property name="geometry">
          <rect>
-          <x>290</x>
-          <y>130</y>
+          <x>270</x>
+          <y>140</y>
           <width>431</width>
           <height>61</height>
          </rect>
@@ -321,8 +328,8 @@ QPushButton:hover {
        <widget class="QWidget" name="gridLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>260</x>
-          <y>10</y>
+          <x>240</x>
+          <y>20</y>
           <width>481</width>
           <height>111</height>
          </rect>
@@ -910,8 +917,8 @@ QPushButton:hover {
        <widget class="QWidget" name="gridLayoutWidget_5">
         <property name="geometry">
          <rect>
-          <x>290</x>
-          <y>200</y>
+          <x>270</x>
+          <y>210</y>
           <width>431</width>
           <height>121</height>
          </rect>
@@ -1273,8 +1280,8 @@ QPushButton:hover {
        <widget class="QWidget" name="gridLayoutWidget_3">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
+          <x>240</x>
+          <y>20</y>
           <width>481</width>
           <height>111</height>
          </rect>
@@ -1881,8 +1888,8 @@ QPushButton:hover {
        <widget class="QWidget" name="gridLayoutWidget_4">
         <property name="geometry">
          <rect>
-          <x>60</x>
-          <y>130</y>
+          <x>290</x>
+          <y>140</y>
           <width>381</width>
           <height>121</height>
          </rect>

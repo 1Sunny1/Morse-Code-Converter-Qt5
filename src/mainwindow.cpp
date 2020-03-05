@@ -6,7 +6,6 @@
 #include <QString>
 #include <QKeyEvent>
 #include <QIcon>
-#include <QPixmap>
 #include <QtSvg/QtSvg>
 #include <QPropertyAnimation>
 
@@ -26,9 +25,8 @@ MainWindow::MainWindow(QWidget *parent)
     keyboard->setStackedWidget(ui->stackedWidget);
     connectAllButtons();
 
-    QString x = MorseCodeConverter::TextToCode("a");
-    ui->pushButton->setText(x);
-
+    animatedBG = std::make_unique<AnimatedBackground>();
+    connectAllLabels();
 }
 
 MainWindow::~MainWindow() {
