@@ -2,6 +2,11 @@
 #include "ui_mainwindow.h"
 
 void MainWindow::connectAllLabels() {
-    std::pair<int, int> windowDimensions(this->height(), this->width());
-    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label, windowDimensions));
+    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label));
+    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_3));
+    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_4));
+    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_5));
+    animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_6));
+    //animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_7));
+    //animatedBG->connectAnimation(AnimatedBackground::createAnimation(ui->label_8));
 }

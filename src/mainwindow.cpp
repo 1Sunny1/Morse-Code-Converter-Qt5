@@ -18,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
+    this->setFixedSize(QSize(1280, 720));
+    ui->label_2->setGeometry(0,0, 1280, 720);
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
 

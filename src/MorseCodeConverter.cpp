@@ -1,4 +1,5 @@
 #include "MorseCodeConverter.h"
+#include "myrandom.h"
 #include <algorithm>
 
 std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
@@ -44,4 +45,10 @@ QString MorseCodeConverter::TextToCode(const std::string &text) noexcept {
             converted.append(found->second + "  ");
     }
     return converted;
+}
+
+
+QString MorseCodeConverter::getRandomCode() {
+    int random = random::number<int>(33, 125);
+    return morseCodes[static_cast<char>(random)];
 }

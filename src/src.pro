@@ -33,7 +33,8 @@ HEADERS += \
     Keyboard.h \
     MorseCodeConverter.h \
     PushButtonHover.h \
-    mainwindow.h
+    mainwindow.h \
+    myrandom.h
 
 FORMS += \
     mainwindow.ui

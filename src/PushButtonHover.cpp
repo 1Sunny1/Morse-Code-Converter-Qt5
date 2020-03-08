@@ -5,11 +5,11 @@ PushButtonHover::PushButtonHover(QWidget *parent) : QPushButton(parent) {
     setAttribute(Qt::WA_Hover);
 }
 
-void PushButtonHover::enterEvent(QEvent *e) {
+void PushButtonHover::enterEvent(QEvent *) {
         setCursor(Qt::PointingHandCursor);
 }
 
-void PushButtonHover::leaveEvent(QEvent *e) {
+void PushButtonHover::leaveEvent(QEvent *) {
         setCursor(Qt::ArrowCursor);
 }
 

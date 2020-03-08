@@ -4,16 +4,16 @@
 #include <QMainWindow>
 #include <QLabel>
 #include <QPropertyAnimation>
+#include "myrandom.h"
 
 class AnimatedBackground final : public QMainWindow {
     Q_OBJECT
 public:
     explicit                         AnimatedBackground() noexcept;
-    void                             start();
     void                             connectAnimation(QPropertyAnimation *);
 
 public:
-    static QPropertyAnimation*       createAnimation(QLabel *, std::pair<int, int>);
+    static QPropertyAnimation*       createAnimation(QLabel *);
     static void                      setBlurEffect(QLabel *);
 
 private slots:

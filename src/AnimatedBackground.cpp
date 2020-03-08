@@ -1,24 +1,12 @@
 #include "AnimatedBackground.h"
-
-#include <random>
 #include <QApplication>
 #include <QGraphicsBlurEffect>
 
-static std::mt19937 gen{ std::random_device{}() };
-
-template<typename T>
-inline T random(T min, T max) {
-    return std::uniform_int_distribution<T>{min, max}(gen);
-}
-
-template<typename T>
-T randomDuration(T min, T max) {
-    return random<T>(min, max);
-}
+#include "MorseCodeConverter.h"
 
 AnimatedBackground::AnimatedBackground() noexcept
-    : wHeight{ this->height() },
-      wWidth{ this->width() } {}
+    : wHeight{ 720 },
+      wWidth{ 1280 } {}
 
 void AnimatedBackground::connectAnimation(QPropertyAnimation *animation) {
     connect(animation, &QPropertyAnimation::currentLoopChanged, this, &AnimatedBackground::onCurrentLoopChanged);
@@ -26,19 +14,25 @@ void AnimatedBackground::connectAnimation(QPropertyAnimation *animation) {
 
 void AnimatedBackground::onCurrentLoopChanged(int) {
     auto animation = qobject_cast<QPropertyAnimation*>(sender());
-    int randomValue = random<int>(wHeight - wHeight, wHeight);
-    animation->setStartValue(QRect(this->width() + 150, randomValue, 100, 100));
-    animation->setEndValue(QRect(this->width() - this->width() - 100, randomValue, 100, 100));
+    auto label = qobject_cast<QLabel*>(sender());
+    int randomHeight = random::number<int>(wHeight - wHeight, wHeight);
+    animation->setStartValue(QRect(wWidth + 150, randomHeight, 100, 100));
+    animation->setEndValue(QRect(wWidth - wWidth - 100, randomHeight, 100, 100));
 }
 
-QPropertyAnimation *AnimatedBackground::createAnimation(QLabel *label, std::pair<int, int> windowDimensions) {
-    int randomHeight = random<int>(windowDimensions.first - windowDimensions.first, windowDimensions.first);
+QPropertyAnimation *AnimatedBackground::createAnimation(QLabel *label) {
+    const int wHeight = 720;
+    const int wWidth = 1280;
+    label->setText(MorseCodeConverter::getRandomCode());
+    int randomHeight = random::number<int>(wHeight - wHeight, wHeight);
+    int randomStartPos = random::number<int>(wWidth + 50, wWidth + 300);
+    int randomEndPos = random::number<int>(wWidth - wWidth - 200, wWidth - wWidth - 50);
     setBlurEffect(label);
 
     QPropertyAnimation *animation = new QPropertyAnimation(label, "geometry");
-    animation->setDuration(randomDuration<int>(5000, 15000));
-    animation->setStartValue(QRect(windowDimensions.second + 150, randomHeight, 100, 100));
-    animation->setEndValue(QRect(windowDimensions.second - windowDimensions.second - 100, randomHeight, 100, 100));
+    animation->setDuration(random::duration<int>(15000, 30000));
+    animation->setStartValue(QRect(randomStartPos, randomHeight, 100, 100));
+    animation->setEndValue(QRect(randomEndPos, randomHeight, 100, 100));
     animation->setLoopCount(-1);
     animation->start();
 
