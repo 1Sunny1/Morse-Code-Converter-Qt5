@@ -41,7 +41,11 @@ MainWindow::~MainWindow() {
 
 void MainWindow::on_userText_textChanged() {
    ui->convertedText->clear();
-   ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
+   if (toText)
+       ui->convertedText->insertPlainText(MorseCodeConverter::CodeToText(ui->userText->toPlainText().toStdString()));
+   else
+       ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
+
    scrollToTheBottom();
 }
 
@@ -51,4 +55,26 @@ void MainWindow::scrollToTheBottom() {
     ui->convertedText->moveCursor(QTextCursor::End);
     if (scrollbarAtBottom)
         ui->convertedText->ensureCursorVisible();
+}
+
+void MainWindow::on_pushButton_73_clicked() {
+    toText = true;
+    //do some visual changes
+}
+
+void MainWindow::on_pushButton_71_clicked() {
+    toText = false;
+    //do some visual changes
+}
+
+void MainWindow::on_keyboardControlButton_clicked()
+{
+   if(ui->stackedWidget->currentIndex() != 2) {
+       ui->stackedWidget->setCurrentIndex(2); //hide
+       ui->keyboardControlButton->setText("Show keyboard");
+   }
+   else {
+       ui->stackedWidget->setCurrentIndex(0); //show
+       ui->keyboardControlButton->setText("Hide Keyboard");
+   }
 }

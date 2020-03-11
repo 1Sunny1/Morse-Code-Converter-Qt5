@@ -2500,6 +2500,7 @@ QPushButton:pressed {
       </layout>
      </widget>
     </widget>
+    <widget class="QWidget" name="page_3"/>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
@@ -2622,7 +2623,7 @@ QPushButton:pressed {
 </string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton">
+   <widget class="PushButtonHover" name="keyboardControlButton">
     <property name="geometry">
      <rect>
       <x>555</x>
@@ -2648,7 +2649,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>Toggle Keyboard</string>
+     <string>Hide Keyboard</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_7">
@@ -3016,7 +3017,7 @@ P</string>
    <zorder>convertedText</zorder>
    <zorder>userText</zorder>
    <zorder>stackedWidget</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>keyboardControlButton</zorder>
    <zorder>label_7</zorder>
    <zorder>pushButton_64</zorder>
    <zorder>pushButton_71</zorder>

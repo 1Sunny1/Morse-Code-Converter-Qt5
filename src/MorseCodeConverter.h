@@ -4,6 +4,7 @@
 #include <unordered_map>
 #include <QString>
 #include <string>
+#include <QObject>
 
 namespace Filter {
     inline std::string ExcludeSpecialCharacters(std::string &&sample) noexcept {
@@ -16,10 +17,12 @@ namespace Filter {
     }
 }
 
-class MorseCodeConverter final {
+class MorseCodeConverter final : public QObject {
+    Q_OBJECT
 public:
     explicit                                        MorseCodeConverter() = delete;
     static QString                                  TextToCode(const std::string &) noexcept;
+    static QString                                  CodeToText(const std::string &) noexcept;
     static QString                                  getRandomCode() noexcept;
 
 private:

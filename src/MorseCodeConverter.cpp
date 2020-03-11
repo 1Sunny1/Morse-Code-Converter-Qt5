@@ -2,6 +2,7 @@
 #include "myrandom.h"
 
 #include <algorithm>
+#include <sstream>
 
 std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 { ':', "___..." }, { '8', "___.."   },
@@ -33,7 +34,7 @@ std::unordered_map<char, QString> MorseCodeConverter::morseCodes {
 };
 
 QString MorseCodeConverter::TextToCode(const std::string &text) noexcept {
-    QString converted{""};
+    QString converted {""};
     for (const auto &character : text) {
         if (isspace(character))
             converted.append("  ");
@@ -44,6 +45,31 @@ QString MorseCodeConverter::TextToCode(const std::string &text) noexcept {
                                       });
             found != morseCodes.end())
             converted.append(found->second + "  ");
+    }
+    return converted;
+}
+
+auto splitStr(const std::string &str) {
+    std::vector<std::string> temporaryContainer;
+    std::istringstream iss{ std::string(str) };
+
+    std::copy(std::istream_iterator<std::string>{iss}, std::istream_iterator<std::string>{}, std::back_inserter(temporaryContainer));
+    return temporaryContainer;
+}
+
+QString MorseCodeConverter::CodeToText(const std::string &codes) noexcept {
+    QString converted {""};
+    std::vector<std::string> vCodes = splitStr(codes);
+
+    for (const auto& code : vCodes) {
+        if (auto found = std::find_if(morseCodes.begin(), morseCodes.end(),
+                [&code](const auto& value) {
+                    return QString::fromStdString(code) == value.second;
+                });
+            found != morseCodes.end())
+            converted.append(found->first);
+        //else
+            //err
     }
     return converted;
 }
