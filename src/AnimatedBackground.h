@@ -1,10 +1,11 @@
 #ifndef ANIMATEDBACKGROUND_H
 #define ANIMATEDBACKGROUND_H
 
+#include "myrandom.h"
+
 #include <QMainWindow>
 #include <QLabel>
 #include <QPropertyAnimation>
-#include "myrandom.h"
 
 class AnimatedBackground final : public QMainWindow {
     Q_OBJECT

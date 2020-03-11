@@ -3,7 +3,7 @@
 
 #include <QObject>
 #include <QPushButton>
-#include <QTextEdit>
+#include <QPlainTextEdit>
 #include <QStackedWidget>
 #include <unordered_map>
 
@@ -16,7 +16,7 @@ public:
 
 public:
     explicit                Keyboard() = default;
-    explicit                Keyboard(QTextEdit *);
+    explicit                Keyboard(QPlainTextEdit *);
     void                    connectButton(QPushButton *);
     void                    setStackedWidget(QStackedWidget *);
 
@@ -30,10 +30,9 @@ private:
     SpecialButtons          manageButtonValue(QPushButton *);
 
 private:
-    std::unique_ptr<QTextEdit>                          textEdit;
+    std::unique_ptr<QPlainTextEdit>                          textEdit;
     std::unique_ptr<QStackedWidget>                     stackedWidget;
     std::unordered_map<SpecialButtons, QString>         specialButtons;
-
 };
 
 #endif // KEYBOARD_H

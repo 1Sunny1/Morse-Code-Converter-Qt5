@@ -2,4 +2,9 @@
     <qresource prefix="/img">
         <file>img/arrow.svg</file>
     </qresource>
+    <qresource prefix="/font">
+        <file>font/FadeToGrey.ttf</file>
+        <file>font/StaticBuzz.ttf</file>
+        <file>font/QuiteMagicalRegular-8VA2.ttf</file>
+    </qresource>
 </RCC>

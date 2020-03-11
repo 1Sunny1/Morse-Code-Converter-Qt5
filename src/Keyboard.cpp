@@ -2,7 +2,7 @@
 
 #include <QString>
 
-Keyboard::Keyboard(QTextEdit *te) : textEdit(te) {
+Keyboard::Keyboard(QPlainTextEdit *te) : textEdit(te) {
     initializeSpecialButtonsMap();
 }
 

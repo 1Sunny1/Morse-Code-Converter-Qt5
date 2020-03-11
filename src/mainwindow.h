@@ -1,11 +1,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
-#include <memory>
-
 #include "Keyboard.h"
 #include "AnimatedBackground.h"
+
+#include <QMainWindow>
+#include <memory>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,10 +22,10 @@ public:
 private slots:
     void                                    on_userText_textChanged();
 
-
 private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
+    void                                    scrollToTheBottom();
 
 private:
     Ui::MainWindow *ui;

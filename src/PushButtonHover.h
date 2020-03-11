@@ -1,5 +1,6 @@
 #ifndef PUSHBUTTONHOVER_H
 #define PUSHBUTTONHOVER_H
+
 #include <QPushButton>
 #include <QtWidgets>
 #include <QEvent>
@@ -14,7 +15,6 @@ protected:
     virtual void            enterEvent(QEvent *e) override;
     virtual void            leaveEvent(QEvent *e) override;
     virtual bool            event(QEvent *e) override;
-
 };
 
 #endif // PUSHBUTTONHOVER_H

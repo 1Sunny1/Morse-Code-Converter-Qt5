@@ -26,11 +26,8 @@
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>OCR A Extended</family>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -42,7 +39,7 @@
       <x>360</x>
       <y>350</y>
       <width>531</width>
-      <height>361</height>
+      <height>321</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -53,20 +50,19 @@
     </property>
     <property name="styleSheet">
      <string>QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -93,17 +89,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -122,17 +117,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -151,17 +145,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -180,17 +173,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -209,17 +201,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -238,17 +229,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -267,17 +257,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -296,17 +285,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -325,17 +313,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -382,18 +369,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -411,18 +398,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -440,18 +427,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -469,18 +456,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -498,18 +485,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -525,20 +512,29 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -556,18 +552,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -583,20 +579,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -612,20 +617,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -641,20 +655,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -672,18 +695,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -701,18 +724,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -730,18 +753,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -759,18 +782,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -786,20 +809,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -817,18 +849,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -846,18 +878,18 @@ QPushButton:pressed {
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -873,20 +905,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -902,20 +943,29 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -931,20 +981,28 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
-
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -975,17 +1033,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1004,17 +1061,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1033,17 +1089,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1062,17 +1117,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1091,17 +1145,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1120,17 +1173,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1149,17 +1201,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1178,17 +1229,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1207,17 +1257,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1236,17 +1285,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1265,17 +1313,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1294,17 +1341,16 @@ QPushButton:pressed {
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
+	border: 2px solid #ff6666;
 }</string>
          </property>
          <property name="text">
@@ -1351,22 +1397,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>-</string>
@@ -1381,22 +1435,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>3</string>
@@ -1411,22 +1473,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>7</string>
@@ -1441,22 +1511,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>@</string>
@@ -1471,22 +1549,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>9</string>
@@ -1501,22 +1587,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>_</string>
@@ -1531,22 +1625,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>/</string>
@@ -1561,22 +1663,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>!</string>
@@ -1591,22 +1701,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>=</string>
@@ -1621,22 +1739,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>)</string>
@@ -1651,22 +1777,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>4</string>
@@ -1681,22 +1815,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>+</string>
@@ -1711,22 +1853,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>2</string>
@@ -1741,22 +1891,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>1</string>
@@ -1771,22 +1929,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>8</string>
@@ -1801,22 +1967,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>(</string>
@@ -1831,22 +2005,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>6</string>
@@ -1861,22 +2043,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>5</string>
@@ -1891,22 +2081,30 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>'</string>
@@ -1921,22 +2119,30 @@ QPushButton:pressed {
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
+	font: 24pt &quot;Quite Magical&quot;;
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>0</string>
@@ -1963,22 +2169,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>;</string>
@@ -1993,22 +2206,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>:</string>
@@ -2023,22 +2243,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>,</string>
@@ -2053,22 +2280,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>.</string>
@@ -2083,22 +2317,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>?</string>
@@ -2113,22 +2354,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>&quot;</string>
@@ -2143,22 +2391,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>Del</string>
@@ -2173,22 +2428,32 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="toolTipDuration">
+          <number>1</number>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>ABC</string>
@@ -2203,22 +2468,29 @@ QPushButton:pressed {
            <verstretch>3</verstretch>
           </sizepolicy>
          </property>
+         <property name="font">
+          <font>
+           <family>Quite Magical</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QPushButton {
 	border: 1px solid #f0eeee; border-radius: 18px;
-	font-size: 20px; font-family: Arial;
 	background-color: #f0eeee;
 }
 
 QPushButton:hover {
-	background-color: #e6e4e4;
-	border: 2px solid #e6e4e4;
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 2px solid red;
-}
-</string>
+	border: 2px solid #ff6666;
+}</string>
          </property>
          <property name="text">
           <string>Space</string>
@@ -2232,15 +2504,15 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>410</y>
+      <x>20</x>
+      <y>600</y>
       <width>71</width>
       <height>41</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel {
-	background-color: #edbb99;
+	background-color: #cbbeb5;
 }</string>
     </property>
     <property name="text">
@@ -2256,11 +2528,8 @@ QPushButton:pressed {
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>OCR A Extended</family>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -2275,11 +2544,8 @@ QPushButton:pressed {
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>OCR A Extended</family>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -2288,17 +2554,14 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>170</y>
+      <x>20</x>
+      <y>210</y>
       <width>31</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>OCR A Extended</family>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -2307,58 +2570,441 @@ QPushButton:pressed {
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>200</y>
+      <x>20</x>
+      <y>100</y>
       <width>31</width>
       <height>21</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <family>OCR A Extended</family>
-      <pointsize>16</pointsize>
-     </font>
+    <property name="styleSheet">
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
-   <widget class="QTextEdit" name="convertedText">
+   <widget class="QPlainTextEdit" name="convertedText">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>85</x>
       <y>180</y>
       <width>1100</width>
       <height>150</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string>QPushButton {
-	border: 1px solid black; border-radius: 10px;
+     <string notr="true">QPlainTextEdit {
+	border: 2px solid #f0eeee;
+	background-color: palette(base);
+	background-color: #f0eeee;
+	border-radius: 16px;
+	font: 40px;
 }
-
-QPushButton : hover {
-	cursor: pointer;
-}</string>
+</string>
     </property>
    </widget>
-   <widget class="QTextEdit" name="userText">
+   <widget class="QPlainTextEdit" name="userText">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>85</x>
       <y>20</y>
       <width>1100</width>
       <height>150</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string>QPushButton {
-	border: 1px solid black; border-radius: 10px;
+     <string notr="true">QPlainTextEdit {
+	border: 2px solid #f0eeee;
+	background-color: palette(base);
+	background-color: #f0eeee;
+	border-radius: 20px;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>555</x>
+      <y>680</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 14px;
+	background-color: #f0eeee;
+	font-size: 20px;
 }
 
-QPushButton : hover {
-	cursor: pointer;
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
 }</string>
+    </property>
+    <property name="text">
+     <string>Toggle Keyboard</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>400</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>errors</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_64">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_71">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+    </property>
+    <property name="text">
+     <string>To Code</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_73">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+    </property>
+    <property name="text">
+     <string>To text</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>650</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>380</y>
+      <width>311</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextBrowser {
+	border: 2px solid #cbbeb5;
+    border-radius:16px;
+    background-color: palette(base);
+	background-color: #f0eeee;
+	font: &quot;Quite Magical&quot;;
+}</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:22pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;Fast examples&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;SOS &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; color:#000000;&quot;&gt;:  &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;... ___ ... &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;R&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;ats &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;._. ._ _ ... &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;W&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;hat hath God wrought &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;&quot;&gt;.__ .... ._ _ .... ._ _ ....  __. ___ _.. .__ ._. ___ .._ __. .... _&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_74">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+    </property>
+    <property name="text">
+     <string>Pause</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_75">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>350</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 1px solid #f0eeee; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_76">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>440</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>About</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 22pt &quot;Quite Magical&quot;;
+	border: 2px solid black; border-radius: 12px;
+	background-color: #f0eeee;
+	max-width:24px;
+ 	max-height:24px;
+ 	min-width:24px;
+ 	min-height:24px;
+}
+ 
+QPushButton:hover {
+	color: #e4002b;
+	background-color: #f1b10a;
+	border: 2px solid black;
+}
+
+QPushButton:pressed {
+	border: 3px solid grey;
+}</string>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_77">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>490</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>About</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 22pt &quot;Quite Magical&quot;;
+	border: 2px solid black; border-radius: 12px;
+	background-color: #f0eeee;
+	max-width:24px;
+ 	max-height:24px;
+ 	min-width:24px;
+ 	min-height:24px;
+}
+ 
+QPushButton:hover {
+	color: #e4002b;
+	background-color: #f1b10a;
+	border: 2px solid black;
+}
+
+QPushButton:pressed {
+	border: 3px solid grey;
+}</string>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_78">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>625</y>
+      <width>28</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>About</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 22pt &quot;Quite Magical&quot;;
+	border: 2px solid black; border-radius: 12px;
+	background-color: #f0eeee;
+	max-width:24px;
+ 	max-height:24px;
+ 	min-width:24px;
+ 	min-height:24px;
+}
+ 
+QPushButton:hover {
+	color: #e4002b;
+	background-color: #f1b10a;
+	border: 2px solid black;
+}
+
+QPushButton:pressed {
+	border: 3px solid grey;
+}</string>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+   <widget class="PushButtonHover" name="pushButton_79">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>80</y>
+      <width>31</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	border: 2px solid #ff6666; border-radius: 11px;
+	background-color: #f0eeee;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #ff6666;
+}
+
+QPushButton:pressed {
+	border: 2px solid #420420;
+}</string>
+    </property>
+    <property name="text">
+     <string>H
+
+E
+
+L
+
+P</string>
     </property>
    </widget>
    <zorder>label_2</zorder>
@@ -2370,6 +3016,19 @@ QPushButton : hover {
    <zorder>convertedText</zorder>
    <zorder>userText</zorder>
    <zorder>stackedWidget</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label_7</zorder>
+   <zorder>pushButton_64</zorder>
+   <zorder>pushButton_71</zorder>
+   <zorder>pushButton_73</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>textBrowser</zorder>
+   <zorder>pushButton_74</zorder>
+   <zorder>pushButton_75</zorder>
+   <zorder>pushButton_76</zorder>
+   <zorder>pushButton_77</zorder>
+   <zorder>pushButton_78</zorder>
+   <zorder>pushButton_79</zorder>
   </widget>
  </widget>
  <customwidgets>
