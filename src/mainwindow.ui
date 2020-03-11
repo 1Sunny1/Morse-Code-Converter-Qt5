@@ -2619,6 +2619,7 @@ QPushButton:pressed {
 	background-color: palette(base);
 	background-color: #f0eeee;
 	border-radius: 20px;
+	font: 40px;
 }
 </string>
     </property>

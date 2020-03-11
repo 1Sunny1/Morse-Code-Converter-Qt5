@@ -29,13 +29,15 @@ private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
     void                                    scrollToTheBottom();
+    void                                    swapContent();
 
 private:
     Ui::MainWindow *ui;
     std::unique_ptr<Keyboard>               keyboard;
     std::unique_ptr<AnimatedBackground>     animatedBG;
     bool                                    toText{false};
-
+    bool                                    isPushButton_73_pressed{false};
+    bool                                    isPushButton_71_pressed{false};
 };
 
 #endif // MAINWINDOW_H

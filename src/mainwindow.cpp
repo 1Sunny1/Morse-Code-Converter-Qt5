@@ -57,14 +57,41 @@ void MainWindow::scrollToTheBottom() {
         ui->convertedText->ensureCursorVisible();
 }
 
+void leaveButtonLookLikePressed(PushButtonHover *button) {
+    button->setStyleSheet("QPushButton { border: 2px solid #ff6666; border-radius: 11px; background-color: #f5f5dc; font-size: 20px; } QPushButton:hover { background-color: #f5f5dc; border: 2px solid #ff6666; } QPushButton:pressed { border: 2px solid #ff6666; }");
+}
+
+void leaveButtonLookDefault(PushButtonHover *button) {
+    button->setStyleSheet("QPushButton { border: 1px solid #f0eeee; border-radius: 11px; background-color: #f0eeee; font-size: 20px; } QPushButton:hover { background-color: #f5f5dc; border: 2px solid #f5f5dc; } QPushButton:pressed { border: 2px solid #ff6666; }");
+}
+
+void MainWindow::swapContent() {
+    QString userTextContent = ui->userText->toPlainText();
+    QString convertedTextContent = ui->convertedText->toPlainText();
+    ui->userText->setPlainText(convertedTextContent);
+    ui->convertedText->setPlainText(userTextContent.toUpper());
+}
+
 void MainWindow::on_pushButton_73_clicked() {
     toText = true;
-    //do some visual changes
+    leaveButtonLookLikePressed(ui->pushButton_73);
+    isPushButton_73_pressed = true;
+    if (isPushButton_71_pressed) {
+        leaveButtonLookDefault(ui->pushButton_71);
+        isPushButton_71_pressed = false;
+        swapContent();
+    }
 }
 
 void MainWindow::on_pushButton_71_clicked() {
     toText = false;
-    //do some visual changes
+    leaveButtonLookLikePressed(ui->pushButton_71);
+    isPushButton_71_pressed = true;
+    if (isPushButton_73_pressed) {
+        leaveButtonLookDefault(ui->pushButton_73);
+        isPushButton_73_pressed = false;
+        swapContent();
+    }
 }
 
 void MainWindow::on_keyboardControlButton_clicked()
