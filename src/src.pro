@@ -20,6 +20,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     AnimatedBackground.cpp \
+    HelpButtons.cpp \
     Keyboard.cpp \
     MorseCodeConverter.cpp \
     PushButtonHover.cpp \
@@ -30,6 +31,7 @@ SOURCES += \
 
 HEADERS += \
     AnimatedBackground.h \
+    HelpButtons.h \
     Keyboard.h \
     MorseCodeConverter.h \
     PushButtonHover.h \

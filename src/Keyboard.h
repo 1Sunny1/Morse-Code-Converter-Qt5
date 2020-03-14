@@ -16,7 +16,7 @@ public:
 
 public:
     explicit                Keyboard() = default;
-    explicit                Keyboard(QPlainTextEdit *);
+    explicit                Keyboard(QPlainTextEdit *tE, QObject *parent = nullptr);
     void                    connectButton(QPushButton *);
     void                    setStackedWidget(QStackedWidget *);
 
@@ -30,8 +30,8 @@ private:
     SpecialButtons          manageButtonValue(QPushButton *);
 
 private:
-    std::unique_ptr<QPlainTextEdit>                          textEdit;
-    std::unique_ptr<QStackedWidget>                     stackedWidget;
+    QPlainTextEdit *                                    textEdit;
+    QStackedWidget *                                    stackedWidget;
     std::unordered_map<SpecialButtons, QString>         specialButtons;
 };
 

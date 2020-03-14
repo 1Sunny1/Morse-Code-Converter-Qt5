@@ -7,10 +7,10 @@
 #include <QLabel>
 #include <QPropertyAnimation>
 
-class AnimatedBackground final : public QMainWindow {
+class AnimatedBackground final : public QObject {
     Q_OBJECT
 public:
-    explicit                         AnimatedBackground() noexcept;
+    explicit                         AnimatedBackground(QObject *parent = nullptr) noexcept;
     void                             connectAnimation(QPropertyAnimation *);
 
 public:

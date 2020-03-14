@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "MorseCodeConverter.h"
 #include "PushButtonHover.h"
+#include <HelpButtons.h>
 
 #include <QGraphicsView>
 #include <QSize>
@@ -14,24 +15,21 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
+
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
-
+    ui->groupBox->hide();
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
 
-    ui->userText->ensureCursorVisible();
-    ui->userText->setCenterOnScroll(true);
+    animatedBG = new AnimatedBackground(this);
+    connectAllLabels();
+    hideScrollbars();
 
-    ui->convertedText->verticalScrollBar()->hide();
-    ui->userText->verticalScrollBar()->hide();
-
-    keyboard = std::make_unique<Keyboard>(ui->userText);
+    keyboard = new Keyboard(ui->userText, this);
+    helpButtons = new HelpButtons(ui->userText, ui->groupBox, this);
     keyboard->setStackedWidget(ui->stackedWidget);
     connectAllButtons();
-
-    animatedBG = std::make_unique<AnimatedBackground>();
-    connectAllLabels();
 
 }
 
@@ -72,6 +70,15 @@ void MainWindow::swapContent() {
     ui->convertedText->setPlainText(userTextContent.toUpper());
 }
 
+void MainWindow::hideScrollbars() {
+    ui->userText->ensureCursorVisible();
+    ui->userText->setCenterOnScroll(true);
+
+    ui->convertedText->verticalScrollBar()->hide();
+    ui->userText->verticalScrollBar()->hide();
+
+}
+
 void MainWindow::on_pushButton_73_clicked() {
     toText = true;
     leaveButtonLookLikePressed(ui->pushButton_73);
@@ -97,11 +104,27 @@ void MainWindow::on_pushButton_71_clicked() {
 void MainWindow::on_keyboardControlButton_clicked()
 {
    if(ui->stackedWidget->currentIndex() != 2) {
-       ui->stackedWidget->setCurrentIndex(2); //hide
+       ui->stackedWidget->setCurrentIndex(2);
        ui->keyboardControlButton->setText("Show keyboard");
    }
    else {
-       ui->stackedWidget->setCurrentIndex(0); //show
+       ui->stackedWidget->setCurrentIndex(0);
        ui->keyboardControlButton->setText("Hide Keyboard");
    }
+}
+
+void MainWindow::on_helpButton_clicked() {
+    ui->groupBox->show();
+    leaveButtonLookLikePressed(ui->helpButton);
+}
+
+
+void MainWindow::on_pushButton_80_clicked() {
+    ui->groupBox->hide();
+    leaveButtonLookDefault(ui->helpButton);
+}
+
+void MainWindow::on_pushButton_clicked() {
+    ui->groupBox->hide();
+    leaveButtonLookDefault(ui->helpButton);
 }
