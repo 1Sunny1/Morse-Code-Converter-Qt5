@@ -2,10 +2,10 @@
 
 #include <QString>
 
-Keyboard::Keyboard(QPlainTextEdit *te, QObject *parent) :
-    QObject(parent),
-    textEdit(te),
-    stackedWidget(nullptr) {
+Keyboard::Keyboard(QPlainTextEdit *te, QStackedWidget *sW, QObject *parent)
+    : QObject(parent)
+    , textEdit(te)
+    , stackedWidget(sW) {
     initializeSpecialButtonsMap();
 }
 
@@ -39,10 +39,6 @@ void Keyboard::deletePreviousCharacter() {
            textEdit->clear();
            textEdit->insertPlainText(text);
        }
-}
-
-void Keyboard::setStackedWidget(QStackedWidget *sW) {
-    stackedWidget = sW;
 }
 
 void Keyboard::triggerOtherSideOfKeyboard() {

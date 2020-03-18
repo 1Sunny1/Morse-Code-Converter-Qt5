@@ -2,10 +2,11 @@
 #include "ui_mainwindow.h"
 #include "MorseCodeConverter.h"
 #include "PushButtonHover.h"
-#include <HelpButtons.h>
+#include "ButtonAppearance.h"
 
 #include <QGraphicsView>
 #include <QSize>
+#include <QPushButton>
 
 namespace {
     const QString PLACEHOLDER_TEXT{"Type your message..."};
@@ -19,18 +20,26 @@ MainWindow::MainWindow(QWidget *parent)
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
     ui->groupBox->hide();
+    ui->aboutBox->hide();
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
+    hideScrollbars();
+    ButtonLook::Standard::Pressed(ui->toCodePushButton);
 
+    //makeAnimatedBackground();
     animatedBG = new AnimatedBackground(this);
     connectAllLabels();
-    hideScrollbars();
+    //makeKeyboard();
+    keyboard = new Keyboard(ui->userText, ui->stackedWidget, this);
+    //makeHelpTab();
+    helpButton = new HelpButton(ui->userText, ui->groupBox, this);
+    helpButton->passHelpButton(ui->helpButton);
+    //makeAboutTab();
+    aboutButton = new AboutButton(ui->about,ui->aboutBox, this);
+    std::vector<QPushButton*> aboutButtons {ui->aboutButton_1, ui->aboutButton_2, ui->aboutButton_3};
+    aboutButton->passAboutButtons(aboutButtons);
 
-    keyboard = new Keyboard(ui->userText, this);
-    helpButtons = new HelpButtons(ui->userText, ui->groupBox, this);
-    keyboard->setStackedWidget(ui->stackedWidget);
     connectAllButtons();
-
 }
 
 MainWindow::~MainWindow() {
@@ -55,14 +64,6 @@ void MainWindow::scrollToTheBottom() {
         ui->convertedText->ensureCursorVisible();
 }
 
-void leaveButtonLookLikePressed(PushButtonHover *button) {
-    button->setStyleSheet("QPushButton { border: 2px solid #ff6666; border-radius: 11px; background-color: #f5f5dc; font-size: 20px; } QPushButton:hover { background-color: #f5f5dc; border: 2px solid #ff6666; } QPushButton:pressed { border: 2px solid #ff6666; }");
-}
-
-void leaveButtonLookDefault(PushButtonHover *button) {
-    button->setStyleSheet("QPushButton { border: 1px solid #f0eeee; border-radius: 11px; background-color: #f0eeee; font-size: 20px; } QPushButton:hover { background-color: #f5f5dc; border: 2px solid #f5f5dc; } QPushButton:pressed { border: 2px solid #ff6666; }");
-}
-
 void MainWindow::swapContent() {
     QString userTextContent = ui->userText->toPlainText();
     QString convertedTextContent = ui->convertedText->toPlainText();
@@ -77,26 +78,27 @@ void MainWindow::hideScrollbars() {
     ui->convertedText->verticalScrollBar()->hide();
     ui->userText->verticalScrollBar()->hide();
 
+    ui->about->verticalScrollBar()->hide();
 }
 
-void MainWindow::on_pushButton_73_clicked() {
+void MainWindow::on_toTextPushButton_clicked() {
     toText = true;
-    leaveButtonLookLikePressed(ui->pushButton_73);
-    isPushButton_73_pressed = true;
-    if (isPushButton_71_pressed) {
-        leaveButtonLookDefault(ui->pushButton_71);
-        isPushButton_71_pressed = false;
+    ButtonLook::Standard::Pressed(ui->toTextPushButton);
+    isToTextButtonPressed = true;
+    if (isToCodeButtonPressed) {
+        ButtonLook::Standard::Default(ui->toCodePushButton);
+        isToCodeButtonPressed = false;
         swapContent();
     }
 }
 
-void MainWindow::on_pushButton_71_clicked() {
+void MainWindow::on_toCodePushButton_clicked() {
     toText = false;
-    leaveButtonLookLikePressed(ui->pushButton_71);
-    isPushButton_71_pressed = true;
-    if (isPushButton_73_pressed) {
-        leaveButtonLookDefault(ui->pushButton_73);
-        isPushButton_73_pressed = false;
+    ButtonLook::Standard::Pressed(ui->toCodePushButton);
+    isToCodeButtonPressed = true;
+    if (isToTextButtonPressed) {
+        ButtonLook::Standard::Default(ui->toTextPushButton);
+        isToTextButtonPressed = false;
         swapContent();
     }
 }
@@ -115,16 +117,5 @@ void MainWindow::on_keyboardControlButton_clicked()
 
 void MainWindow::on_helpButton_clicked() {
     ui->groupBox->show();
-    leaveButtonLookLikePressed(ui->helpButton);
-}
-
-
-void MainWindow::on_pushButton_80_clicked() {
-    ui->groupBox->hide();
-    leaveButtonLookDefault(ui->helpButton);
-}
-
-void MainWindow::on_pushButton_clicked() {
-    ui->groupBox->hide();
-    leaveButtonLookDefault(ui->helpButton);
+    ButtonLook::Standard::Pressed(ui->helpButton);
 }

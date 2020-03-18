@@ -4,10 +4,10 @@
 #include <QApplication>
 #include <QGraphicsBlurEffect>
 
-AnimatedBackground::AnimatedBackground(QObject *parent) noexcept :
-    QObject(parent),
-    wHeight{ 720 },
-    wWidth{ 1280 } {}
+AnimatedBackground::AnimatedBackground(QObject *parent) noexcept
+    : QObject(parent)
+    , wHeight{ 720 }
+    , wWidth{ 1280 } {}
 
 void AnimatedBackground::connectAnimation(QPropertyAnimation *animation) {
     connect(animation, &QPropertyAnimation::currentLoopChanged, this, &AnimatedBackground::onCurrentLoopChanged);

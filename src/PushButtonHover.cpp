@@ -1,6 +1,7 @@
 #include <PushButtonHover.h>
 
-PushButtonHover::PushButtonHover(QWidget *parent) : QPushButton(parent) {
+PushButtonHover::PushButtonHover(QWidget *parent)
+    : QPushButton(parent) {
     setMouseTracking(true);
     setAttribute(Qt::WA_Hover);
 }

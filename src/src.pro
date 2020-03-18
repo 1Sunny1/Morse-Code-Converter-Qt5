@@ -19,8 +19,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    AboutButton.cpp \
     AnimatedBackground.cpp \
-    HelpButtons.cpp \
+    HelpButton.cpp \
     Keyboard.cpp \
     MorseCodeConverter.cpp \
     PushButtonHover.cpp \
@@ -30,8 +31,11 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    AboutButton.h \
     AnimatedBackground.h \
-    HelpButtons.h \
+    ButtonAppearance.h \
+    HelpButton.h \
+    IConnectButton.h \
     Keyboard.h \
     MorseCodeConverter.h \
     PushButtonHover.h \

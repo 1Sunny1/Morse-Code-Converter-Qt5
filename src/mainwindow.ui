@@ -165,19 +165,15 @@ QPushButton:pressed {
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
-	border: 2px solid #ff6666; border-radius: 11px;
+	border: 2px solid #f0eeee; border-radius: 11px;
 	background-color: #f0eeee;
 	font-size: 20px;
 }
 
 QPushButton:hover {
 	background-color: #f5f5dc;
-	border: 2px solid #ff6666;
 }
-
-QPushButton:pressed {
-	border: 2px solid #ff6666;
-}</string>
+</string>
     </property>
     <property name="text">
      <string>H
@@ -187,22 +183,6 @@ E
 L
 
 P</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>580</y>
-      <width>120</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="userText">
@@ -277,7 +257,7 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="gridLayoutWidget_2">
@@ -2741,7 +2721,7 @@ click button below.</string>
      </widget>
     </widget>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_71">
+   <widget class="PushButtonHover" name="toCodePushButton">
     <property name="geometry">
      <rect>
       <x>270</x>
@@ -2770,7 +2750,7 @@ QPushButton:pressed {
      <string>To Code</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_73">
+   <widget class="PushButtonHover" name="toTextPushButton">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -2814,29 +2794,29 @@ QPushButton:pressed {
     border-radius:16px;
     background-color: palette(base);
 	background-color: #f0eeee;
-	font: &quot;Quite Magical&quot;;
+	font-family: &quot;Quite Magical&quot;;
 }</string>
     </property>
     <property name="html">
      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:22pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;Fast examples&lt;/span&gt;&lt;/p&gt;
-&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;SOS &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; color:#000000;&quot;&gt;:  &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;... ___ ... &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;R&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;ats &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;._. ._ _ ... &lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;W&lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600; font-style:italic;&quot;&gt;hat hath God wrought &lt;/span&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:16pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:14pt; font-weight:600;&quot;&gt;.__ .... ._ _ .... ._ _ ....  __. ___ _.. .__ ._. ___ .._ __. .... _&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Quite Magical'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;Fast examples&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600; font-style:italic; color:#9e0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;SOS &lt;/span&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;... ___ ... &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic;&quot;&gt;R&lt;/span&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic;&quot;&gt;ats &lt;/span&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;:&lt;/span&gt;&lt;span style=&quot; font-size:26pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;._. ._ _ ...&lt;/span&gt;&lt;span style=&quot; font-size:26pt; font-weight:600;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;__w2_wDdcZq8c4_answer_content&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic;&quot;&gt;W&lt;/span&gt;&lt;span style=&quot; font-size:24pt; font-weight:600; font-style:italic;&quot;&gt;hat hath God wrought &lt;/span&gt;&lt;span style=&quot; font-size:24pt; font-weight:600;&quot;&gt;:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;.__ .... ._ _ .... ._ _ ....  __. ___ _.. .__ ._. ___ .._ __. .... _&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_77">
+   <widget class="PushButtonHover" name="aboutButton_3">
     <property name="geometry">
      <rect>
-      <x>910</x>
-      <y>620</y>
+      <x>1150</x>
+      <y>630</y>
       <width>28</width>
       <height>28</height>
      </rect>
@@ -2848,7 +2828,7 @@ p, li { white-space: pre-wrap; }
      <string notr="true">QPushButton {
 	font: 22pt &quot;Quite Magical&quot;;
 	border: 2px solid black; border-radius: 12px;
-	background-color: #f0eeee;
+	background-color: #f4f3f3;
 	max-width:24px;
  	max-height:24px;
  	min-width:24px;
@@ -2856,24 +2836,24 @@ p, li { white-space: pre-wrap; }
 }
  
 QPushButton:hover {
-	color: #e4002b;
-	background-color: #f1b10a;
-	border: 2px solid black;
+	background-color: #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 3px solid grey;
+	border: 3px solid #ff6666;
 }</string>
     </property>
     <property name="text">
-     <string>?</string>
+     <string>?
+What hath God wrought
+( .__ .... ._ _   .... ._ _ ....   __. ___ _..   .__ ._. ___ .._ __. .... _ ) was the biblical phrase (Numbers 23:23) that Samuel Morse transmitted and received when demonstrating the telegraph to Congress in 1844.</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_78">
+   <widget class="PushButtonHover" name="aboutButton_1">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>440</y>
+      <x>1120</x>
+      <y>455</y>
       <width>28</width>
       <height>28</height>
      </rect>
@@ -2894,7 +2874,7 @@ QPushButton:pressed {
      <string notr="true">QPushButton {
 	font: 22pt &quot;Quite Magical&quot;;
 	border: 2px solid black; border-radius: 12px;
-	background-color: #f0eeee;
+	background-color: #f4f3f3;
 	max-width:24px;
  	max-height:24px;
  	min-width:24px;
@@ -2902,24 +2882,24 @@ QPushButton:pressed {
 }
  
 QPushButton:hover {
-	color: #e4002b;
-	background-color: #f1b10a;
-	border: 2px solid black;
+	background-color: #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 3px solid grey;
+	border: 3px solid #ff6666;
 }</string>
     </property>
     <property name="text">
-     <string>?</string>
+     <string>?
+SOS ( ... ___ ... )
+is the worldwide distress call. Marconi’s CQD ( _._. __._ _.. ) was also used. Distress calls have saved many lives, such as all 46 on Steamship Kentucky. The Titanic issued both SOS and CQD calls.</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_76">
+   <widget class="PushButtonHover" name="aboutButton_2">
     <property name="geometry">
      <rect>
-      <x>1100</x>
-      <y>490</y>
+      <x>1120</x>
+      <y>505</y>
       <width>28</width>
       <height>28</height>
      </rect>
@@ -2931,7 +2911,7 @@ QPushButton:pressed {
      <string notr="true">QPushButton {
 	font: 22pt &quot;Quite Magical&quot;;
 	border: 2px solid black; border-radius: 12px;
-	background-color: #f0eeee;
+	background-color: #f4f3f3;
 	max-width:24px;
  	max-height:24px;
  	min-width:24px;
@@ -2939,20 +2919,20 @@ QPushButton:pressed {
 }
  
 QPushButton:hover {
-	color: #e4002b;
-	background-color: #f1b10a;
-	border: 2px solid black;
+	background-color: #f5f5dc;
 }
 
 QPushButton:pressed {
-	border: 3px solid grey;
+	border: 3px solid #ff6666;
 }</string>
     </property>
     <property name="text">
-     <string>?</string>
+     <string>?
+rats ( ._. ._ _ ... )
+was broadcast sent by magician Nevil Maskelyne during Marconi’s demonstration to the Royal Institution. This message proved that Marconi had not solved the problem of other people listening in to messages. This 1903 incident is considered the first wireless hack</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_64">
+   <widget class="PushButtonHover" name="playPushButton">
     <property name="geometry">
      <rect>
       <x>920</x>
@@ -2981,7 +2961,7 @@ QPushButton:pressed {
      <string>Play</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_74">
+   <widget class="PushButtonHover" name="pausePushButton">
     <property name="geometry">
      <rect>
       <x>1000</x>
@@ -3010,7 +2990,7 @@ QPushButton:pressed {
      <string>Pause</string>
     </property>
    </widget>
-   <widget class="PushButtonHover" name="pushButton_75">
+   <widget class="PushButtonHover" name="stopPushButton">
     <property name="geometry">
      <rect>
       <x>1080</x>
@@ -3042,8 +3022,8 @@ QPushButton:pressed {
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>10</y>
+      <x>1220</x>
+      <y>690</y>
       <width>1121</width>
       <height>691</height>
      </rect>
@@ -3112,7 +3092,7 @@ QPushButton:pressed {
       <string>._</string>
      </property>
     </widget>
-    <widget class="PushButtonHover" name="pushButton_80">
+    <widget class="PushButtonHover" name="closeButton">
      <property name="geometry">
       <rect>
        <x>450</x>
@@ -5502,7 +5482,7 @@ its code to user input section</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="PushButtonHover" name="pushButton">
+    <widget class="PushButtonHover" name="closeButton2">
      <property name="geometry">
       <rect>
        <x>1070</x>
@@ -5532,6 +5512,105 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="aboutBox">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>330</y>
+      <width>431</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	border:none;
+}</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTextBrowser" name="about">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>431</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTextBrowser {
+	border: 2px solid #cbbeb5;
+    border-radius:16px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: none;
+    background-color: palette(base);
+	background-color: #f0eeee;
+}</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_66">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>431</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	border: 2px solid #cbbeb5;
+	border-top: none;
+    border-radius:16px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+    background-color: palette(base);
+	background-color: #d8d6d6;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="PushButtonHover" name="closeAboutButton">
+     <property name="geometry">
+      <rect>
+       <x>135</x>
+       <y>229</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	border: 1px solid #f1efef; border-radius: 10px;
+	background-color: #f1efef;
+	font-size: 20px;
+}
+
+QPushButton:hover {
+	background-color: #f5f5dc;
+	border: 2px solid #f5f5dc;
+}
+
+QPushButton:pressed {
+	border: 2px solid #ff6666;
+}</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
@@ -5541,20 +5620,20 @@ QPushButton:pressed {
    <zorder>keyboardControlButton</zorder>
    <zorder>graphicsView</zorder>
    <zorder>helpButton</zorder>
-   <zorder>frame</zorder>
    <zorder>userText</zorder>
    <zorder>convertedText</zorder>
    <zorder>stackedWidget</zorder>
-   <zorder>pushButton_71</zorder>
-   <zorder>pushButton_73</zorder>
+   <zorder>toCodePushButton</zorder>
+   <zorder>toTextPushButton</zorder>
    <zorder>textBrowser</zorder>
-   <zorder>pushButton_77</zorder>
-   <zorder>pushButton_78</zorder>
-   <zorder>pushButton_76</zorder>
-   <zorder>pushButton_64</zorder>
-   <zorder>pushButton_74</zorder>
-   <zorder>pushButton_75</zorder>
+   <zorder>aboutButton_3</zorder>
+   <zorder>aboutButton_1</zorder>
+   <zorder>aboutButton_2</zorder>
+   <zorder>playPushButton</zorder>
+   <zorder>pausePushButton</zorder>
+   <zorder>stopPushButton</zorder>
    <zorder>groupBox</zorder>
+   <zorder>aboutBox</zorder>
   </widget>
  </widget>
  <customwidgets>

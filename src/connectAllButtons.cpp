@@ -1,8 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-//this file contains function that connects all buttons to keyboard.
-//there's no much i can do against its largeness.
+//This file contains function that connects all ui buttons.
+//There's no much i can do against its largeness,
+//i mean, i can split this function into many specialized functions "connect "X" Buttons"
+//where "X" is unique class where button connections could be, but it would be redundant and readability
+//wouldn't be much improved if at all.
+//You can forgive me this time i guess :)
 
 void MainWindow::connectAllButtons() {
     keyboard->connectButton(ui->pushButton_1);
@@ -80,56 +84,67 @@ void MainWindow::connectAllButtons() {
     //Code buttons from Help tab//
     //////////////////////////////
 
-    helpButtons->connectButton(ui->pushButton_79);
-    helpButtons->connectButton(ui->pushButton_81);
-    helpButtons->connectButton(ui->pushButton_82);
-    helpButtons->connectButton(ui->pushButton_83);
-    helpButtons->connectButton(ui->pushButton_84);
-    helpButtons->connectButton(ui->pushButton_85);
-    helpButtons->connectButton(ui->pushButton_86);
-    helpButtons->connectButton(ui->pushButton_87);
-    helpButtons->connectButton(ui->pushButton_88);
-    helpButtons->connectButton(ui->pushButton_89);
-    helpButtons->connectButton(ui->pushButton_90);
-    helpButtons->connectButton(ui->pushButton_91);
-    helpButtons->connectButton(ui->pushButton_92);
-    helpButtons->connectButton(ui->pushButton_93);
-    helpButtons->connectButton(ui->pushButton_94);
-    helpButtons->connectButton(ui->pushButton_95);
-    helpButtons->connectButton(ui->pushButton_96);
-    helpButtons->connectButton(ui->pushButton_97);
-    helpButtons->connectButton(ui->pushButton_98);
-    helpButtons->connectButton(ui->pushButton_99);
-    helpButtons->connectButton(ui->pushButton_100);
-    helpButtons->connectButton(ui->pushButton_101);
-    helpButtons->connectButton(ui->pushButton_102);
-    helpButtons->connectButton(ui->pushButton_103);
-    helpButtons->connectButton(ui->pushButton_104);
-    helpButtons->connectButton(ui->pushButton_105);
-    helpButtons->connectButton(ui->pushButton_106);
-    helpButtons->connectButton(ui->pushButton_107);
-    helpButtons->connectButton(ui->pushButton_108);
-    helpButtons->connectButton(ui->pushButton_109);
-    helpButtons->connectButton(ui->pushButton_110);
-    helpButtons->connectButton(ui->pushButton_111);
-    helpButtons->connectButton(ui->pushButton_112);
-    helpButtons->connectButton(ui->pushButton_113);
-    helpButtons->connectButton(ui->pushButton_114);
-    helpButtons->connectButton(ui->pushButton_115);
-    helpButtons->connectButton(ui->pushButton_116);
-    helpButtons->connectButton(ui->pushButton_117);
-    helpButtons->connectButton(ui->pushButton_118);
-    helpButtons->connectButton(ui->pushButton_119);
-    helpButtons->connectButton(ui->pushButton_120);
-    helpButtons->connectButton(ui->pushButton_121);
-    helpButtons->connectButton(ui->pushButton_122);
-    helpButtons->connectButton(ui->pushButton_123);
-    helpButtons->connectButton(ui->pushButton_124);
-    helpButtons->connectButton(ui->pushButton_125);
-    helpButtons->connectButton(ui->pushButton_126);
-    helpButtons->connectButton(ui->pushButton_127);
-    helpButtons->connectButton(ui->pushButton_128);
-    helpButtons->connectButton(ui->pushButton_129);
-    helpButtons->connectButton(ui->pushButton_130);
-    helpButtons->connectButton(ui->pushButton_131);
+    helpButton->connectButton(ui->pushButton_79);
+    helpButton->connectButton(ui->pushButton_81);
+    helpButton->connectButton(ui->pushButton_82);
+    helpButton->connectButton(ui->pushButton_83);
+    helpButton->connectButton(ui->pushButton_84);
+    helpButton->connectButton(ui->pushButton_85);
+    helpButton->connectButton(ui->pushButton_86);
+    helpButton->connectButton(ui->pushButton_87);
+    helpButton->connectButton(ui->pushButton_88);
+    helpButton->connectButton(ui->pushButton_89);
+    helpButton->connectButton(ui->pushButton_90);
+    helpButton->connectButton(ui->pushButton_91);
+    helpButton->connectButton(ui->pushButton_92);
+    helpButton->connectButton(ui->pushButton_93);
+    helpButton->connectButton(ui->pushButton_94);
+    helpButton->connectButton(ui->pushButton_95);
+    helpButton->connectButton(ui->pushButton_96);
+    helpButton->connectButton(ui->pushButton_97);
+    helpButton->connectButton(ui->pushButton_98);
+    helpButton->connectButton(ui->pushButton_99);
+    helpButton->connectButton(ui->pushButton_100);
+    helpButton->connectButton(ui->pushButton_101);
+    helpButton->connectButton(ui->pushButton_102);
+    helpButton->connectButton(ui->pushButton_103);
+    helpButton->connectButton(ui->pushButton_104);
+    helpButton->connectButton(ui->pushButton_105);
+    helpButton->connectButton(ui->pushButton_106);
+    helpButton->connectButton(ui->pushButton_107);
+    helpButton->connectButton(ui->pushButton_108);
+    helpButton->connectButton(ui->pushButton_109);
+    helpButton->connectButton(ui->pushButton_110);
+    helpButton->connectButton(ui->pushButton_111);
+    helpButton->connectButton(ui->pushButton_112);
+    helpButton->connectButton(ui->pushButton_113);
+    helpButton->connectButton(ui->pushButton_114);
+    helpButton->connectButton(ui->pushButton_115);
+    helpButton->connectButton(ui->pushButton_116);
+    helpButton->connectButton(ui->pushButton_117);
+    helpButton->connectButton(ui->pushButton_118);
+    helpButton->connectButton(ui->pushButton_119);
+    helpButton->connectButton(ui->pushButton_120);
+    helpButton->connectButton(ui->pushButton_121);
+    helpButton->connectButton(ui->pushButton_122);
+    helpButton->connectButton(ui->pushButton_123);
+    helpButton->connectButton(ui->pushButton_124);
+    helpButton->connectButton(ui->pushButton_125);
+    helpButton->connectButton(ui->pushButton_126);
+    helpButton->connectButton(ui->pushButton_127);
+    helpButton->connectButton(ui->pushButton_128);
+    helpButton->connectButton(ui->pushButton_129);
+    helpButton->connectButton(ui->pushButton_130);
+    helpButton->connectButton(ui->pushButton_131);
+    helpButton->connectCloseButton(ui->closeButton);
+    helpButton->connectCloseButton(ui->closeButton2);
+
+    //////////////////////////////////////////
+    //About buttons from Fast Example widget//
+    //////////////////////////////////////////
+
+    aboutButton->connectButton(ui->aboutButton_1);
+    aboutButton->connectButton(ui->aboutButton_2);
+    aboutButton->connectButton(ui->aboutButton_3);
+    aboutButton->connectCloseButton(ui->closeAboutButton);
 }

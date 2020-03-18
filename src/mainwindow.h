@@ -3,7 +3,8 @@
 
 #include "Keyboard.h"
 #include "AnimatedBackground.h"
-#include "HelpButtons.h"
+#include "HelpButton.h"
+#include "AboutButton.h"
 
 #include <QMainWindow>
 #include <memory>
@@ -22,14 +23,10 @@ public:
 
 private slots:
     void                                    on_userText_textChanged();
-    void                                    on_pushButton_73_clicked();
-    void                                    on_pushButton_71_clicked();
+    void                                    on_toTextPushButton_clicked();
+    void                                    on_toCodePushButton_clicked();
     void                                    on_keyboardControlButton_clicked();
     void                                    on_helpButton_clicked();
-
-    void on_pushButton_80_clicked();
-
-    void on_pushButton_clicked();
 
 private:
     void                                    connectAllButtons();
@@ -39,13 +36,15 @@ private:
     void                                    hideScrollbars();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::MainWindow                          *ui;
     Keyboard *                              keyboard;
     AnimatedBackground *                    animatedBG;
-    HelpButtons *                           helpButtons;
+    HelpButton *                            helpButton;
+    AboutButton *                           aboutButton;
+
     bool                                    toText{false};
-    bool                                    isPushButton_73_pressed{false};
-    bool                                    isPushButton_71_pressed{false};
+    bool                                    isToTextButtonPressed{false};
+    bool                                    isToCodeButtonPressed{true};
 };
 
 #endif // MAINWINDOW_H
