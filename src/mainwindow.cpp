@@ -12,43 +12,48 @@ namespace {
     const QString PLACEHOLDER_TEXT{"Type your message..."};
 }
 
+void hideScrollBars(std::pair<QPlainTextEdit *, QPlainTextEdit *> textEdits, QTextBrowser *browser); //move to some namespace
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
+    toText = new bool(false);
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
     ui->groupBox->hide();
     ui->aboutBox->hide();
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
-    hideScrollbars();
+
+    hideScrollBars(std::make_pair(ui->userText, ui->convertedText), ui->about);
+
     ButtonLook::Standard::Pressed(ui->toCodePushButton);
 
     //makeAnimatedBackground();
     animatedBG = new AnimatedBackground(this);
     connectAllLabels();
-    //makeKeyboard();
+
     keyboard = new Keyboard(ui->userText, ui->stackedWidget, this);
-    //makeHelpTab();
-    helpButton = new HelpButton(ui->userText, ui->groupBox, this);
-    helpButton->passHelpButton(ui->helpButton);
-    //makeAboutTab();
-    aboutButton = new AboutButton(ui->about,ui->aboutBox, this);
-    std::vector<QPushButton*> aboutButtons {ui->aboutButton_1, ui->aboutButton_2, ui->aboutButton_3};
-    aboutButton->passAboutButtons(aboutButtons);
+
+    setupHelpTab();
+
+    setupAboutTab();
+
+    setupControlButtons();
 
     connectAllButtons();
 }
 
 MainWindow::~MainWindow() {
     delete ui;
+    delete toText;
 }
 
 void MainWindow::on_userText_textChanged() {
    ui->convertedText->clear();
-   if (toText)
+   if (*toText)
        ui->convertedText->insertPlainText(MorseCodeConverter::CodeToText(ui->userText->toPlainText().toStdString()));
    else
        ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
@@ -64,58 +69,30 @@ void MainWindow::scrollToTheBottom() {
         ui->convertedText->ensureCursorVisible();
 }
 
-void MainWindow::swapContent() {
-    QString userTextContent = ui->userText->toPlainText();
-    QString convertedTextContent = ui->convertedText->toPlainText();
-    ui->userText->setPlainText(convertedTextContent);
-    ui->convertedText->setPlainText(userTextContent.toUpper());
+void MainWindow::setupControlButtons() {
+    auto controlButtons = std::make_pair(ui->toCodePushButton, ui->toTextPushButton);
+    converterControlButton = new ConverterControlButton(toText, controlButtons, this);
+    auto plainTextEdits = std::pair(ui->userText, ui->convertedText);
+    converterControlButton->passPlainTextEdits(plainTextEdits);
 }
 
-void MainWindow::hideScrollbars() {
-    ui->userText->ensureCursorVisible();
-    ui->userText->setCenterOnScroll(true);
-
-    ui->convertedText->verticalScrollBar()->hide();
-    ui->userText->verticalScrollBar()->hide();
-
-    ui->about->verticalScrollBar()->hide();
+void MainWindow::setupAboutTab() {
+    aboutButton = new AboutButton(ui->about,ui->aboutBox, this);
+    std::vector<QPushButton*> aboutButtons {ui->aboutButton_1, ui->aboutButton_2, ui->aboutButton_3};
+    aboutButton->passAboutButtons(aboutButtons);
 }
 
-void MainWindow::on_toTextPushButton_clicked() {
-    toText = true;
-    ButtonLook::Standard::Pressed(ui->toTextPushButton);
-    isToTextButtonPressed = true;
-    if (isToCodeButtonPressed) {
-        ButtonLook::Standard::Default(ui->toCodePushButton);
-        isToCodeButtonPressed = false;
-        swapContent();
-    }
+void MainWindow::setupHelpTab() {
+    helpButton = new HelpButton(ui->userText, ui->groupBox, this);
+    helpButton->passHelpButton(ui->helpButton);
 }
 
-void MainWindow::on_toCodePushButton_clicked() {
-    toText = false;
-    ButtonLook::Standard::Pressed(ui->toCodePushButton);
-    isToCodeButtonPressed = true;
-    if (isToTextButtonPressed) {
-        ButtonLook::Standard::Default(ui->toTextPushButton);
-        isToTextButtonPressed = false;
-        swapContent();
-    }
-}
+void hideScrollBars(std::pair<QPlainTextEdit *, QPlainTextEdit *> textEdits, QTextBrowser *aboutBrowser) {
+    textEdits.first->ensureCursorVisible();
+    textEdits.first->setCenterOnScroll(true);
 
-void MainWindow::on_keyboardControlButton_clicked()
-{
-   if(ui->stackedWidget->currentIndex() != 2) {
-       ui->stackedWidget->setCurrentIndex(2);
-       ui->keyboardControlButton->setText("Show keyboard");
-   }
-   else {
-       ui->stackedWidget->setCurrentIndex(0);
-       ui->keyboardControlButton->setText("Hide Keyboard");
-   }
-}
+    textEdits.second->verticalScrollBar()->hide();
+    textEdits.first->verticalScrollBar()->hide();
 
-void MainWindow::on_helpButton_clicked() {
-    ui->groupBox->show();
-    ButtonLook::Standard::Pressed(ui->helpButton);
+    aboutBrowser->verticalScrollBar()->hide();
 }

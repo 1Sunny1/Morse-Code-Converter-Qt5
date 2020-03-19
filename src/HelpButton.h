@@ -16,11 +16,13 @@ public:
                                             HelpButton(QPlainTextEdit *te, QGroupBox *gB, QObject *parent = nullptr);
     void                                    connectButton(QPushButton *b) override;
     void                                    connectCloseButton(QPushButton *b);
+    void                                    connectHelpButtonTab(QPushButton *b);
     void                                    passHelpButton(QPushButton *b);
 
 public slots:
     void                                    onButtonClick();
     void                                    onCloseButtonClick();
+    void                                    onHelpButtonClick();
 
 private:
     QPlainTextEdit *                        userText;

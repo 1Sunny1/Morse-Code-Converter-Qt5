@@ -5,6 +5,7 @@
 #include "AnimatedBackground.h"
 #include "HelpButton.h"
 #include "AboutButton.h"
+#include "ConverterControlButton.h"
 
 #include <QMainWindow>
 #include <memory>
@@ -23,17 +24,14 @@ public:
 
 private slots:
     void                                    on_userText_textChanged();
-    void                                    on_toTextPushButton_clicked();
-    void                                    on_toCodePushButton_clicked();
-    void                                    on_keyboardControlButton_clicked();
-    void                                    on_helpButton_clicked();
 
 private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
     void                                    scrollToTheBottom();
-    void                                    swapContent();
-    void                                    hideScrollbars();
+    void                                    setupControlButtons();
+    void                                    setupAboutTab();
+    void                                    setupHelpTab();
 
 private:
     Ui::MainWindow                          *ui;
@@ -41,8 +39,9 @@ private:
     AnimatedBackground *                    animatedBG;
     HelpButton *                            helpButton;
     AboutButton *                           aboutButton;
+    ConverterControlButton *                converterControlButton;
 
-    bool                                    toText{false};
+    bool *                                  toText;
     bool                                    isToTextButtonPressed{false};
     bool                                    isToCodeButtonPressed{true};
 };

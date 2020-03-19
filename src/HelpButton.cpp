@@ -17,6 +17,10 @@ void HelpButton::connectCloseButton(QPushButton *controlButton) {
     connect(controlButton, &QPushButton::clicked, this, &HelpButton::onCloseButtonClick);
 }
 
+void HelpButton::connectHelpButtonTab(QPushButton *helpButton) {
+    connect(helpButton, &QPushButton::clicked, this, &HelpButton::onHelpButtonClick);
+}
+
 void HelpButton::onButtonClick() {
     auto button = qobject_cast<QPushButton*>(sender());
     QString content = userText->toPlainText();
@@ -35,4 +39,9 @@ void HelpButton::onCloseButtonClick() {
 
 void HelpButton::passHelpButton(QPushButton *_helpButton) {
     helpButton = _helpButton;
+}
+
+void HelpButton::onHelpButtonClick() {
+    groupBox->show();
+    ButtonLook::Standard::Pressed(helpButton);
 }

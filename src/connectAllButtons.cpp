@@ -79,6 +79,7 @@ void MainWindow::connectAllButtons() {
     keyboard->connectButton(ui->pushButton_69);
     keyboard->connectButton(ui->pushButton_70);
     keyboard->connectButton(ui->pushButton_72);
+    keyboard->connectControlButton(ui->keyboardControlButton);
 
     //////////////////////////////
     //Code buttons from Help tab//
@@ -138,6 +139,7 @@ void MainWindow::connectAllButtons() {
     helpButton->connectButton(ui->pushButton_131);
     helpButton->connectCloseButton(ui->closeButton);
     helpButton->connectCloseButton(ui->closeButton2);
+    helpButton->connectHelpButtonTab(ui->helpButton);
 
     //////////////////////////////////////////
     //About buttons from Fast Example widget//
@@ -147,4 +149,11 @@ void MainWindow::connectAllButtons() {
     aboutButton->connectButton(ui->aboutButton_2);
     aboutButton->connectButton(ui->aboutButton_3);
     aboutButton->connectCloseButton(ui->closeAboutButton);
+
+    /////////////////////////////
+    //Converter control buttons//
+    /////////////////////////////
+
+    converterControlButton->connectButton(ui->toCodePushButton);
+    converterControlButton->connectButton(ui->toTextPushButton);
 }

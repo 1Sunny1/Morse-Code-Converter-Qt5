@@ -21,6 +21,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     AboutButton.cpp \
     AnimatedBackground.cpp \
+    ConverterControlButton.cpp \
     HelpButton.cpp \
     Keyboard.cpp \
     MorseCodeConverter.cpp \
@@ -34,6 +35,7 @@ HEADERS += \
     AboutButton.h \
     AnimatedBackground.h \
     ButtonAppearance.h \
+    ConverterControlButton.h \
     HelpButton.h \
     IConnectButton.h \
     Keyboard.h \

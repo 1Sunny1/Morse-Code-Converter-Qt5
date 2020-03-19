@@ -20,9 +20,11 @@ public:
     explicit                Keyboard() = default;
     explicit                Keyboard(QPlainTextEdit *tE, QStackedWidget * sW, QObject *parent = nullptr);
     void                    connectButton(QPushButton *) override;
+    void                    connectControlButton(QPushButton *);
 
 private slots:
     void                    onButtonClick();
+    void                    onKeyboardControlButtonClick();
 
 private:
     void                    deletePreviousCharacter();

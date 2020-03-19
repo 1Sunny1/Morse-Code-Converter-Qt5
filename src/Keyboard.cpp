@@ -13,6 +13,10 @@ void Keyboard::connectButton(QPushButton *button) {
     connect(button, &QPushButton::clicked, this, &Keyboard::onButtonClick);
 }
 
+void Keyboard::connectControlButton(QPushButton *button) {
+    connect(button, &QPushButton::clicked, this, &Keyboard::onKeyboardControlButtonClick);
+}
+
 void Keyboard::onButtonClick() {
     auto clickedButton = qobject_cast<QPushButton*>(sender());
 
@@ -66,4 +70,18 @@ Keyboard::SpecialButtons Keyboard::manageButtonValue(QPushButton *pushButton) {
 
     else
         return SpecialButtons::NONE;
+}
+
+void Keyboard::onKeyboardControlButtonClick() {
+    auto button = qobject_cast<QPushButton *>(sender());
+
+    if(stackedWidget->currentIndex() != 2) {
+        stackedWidget->setCurrentIndex(2);
+        button->setText("Show keyboard");
+    }
+
+    else {
+        stackedWidget->setCurrentIndex(0);
+        button->setText("Hide Keyboard");
+    }
 }

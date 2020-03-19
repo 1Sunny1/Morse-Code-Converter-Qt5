@@ -17,10 +17,9 @@ namespace Filter {
     }
 }
 
-class MorseCodeConverter final : public QObject {
-    Q_OBJECT
+class MorseCodeConverter final {
 public:
-    explicit                                        MorseCodeConverter() = delete;
+    explicit                                        MorseCodeConverter() = delete;                                              
     static QString                                  TextToCode(const std::string &) noexcept;
     static QString                                  CodeToText(const std::string &) noexcept;
     static QString                                  getRandomCode() noexcept;
