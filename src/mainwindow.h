@@ -28,10 +28,10 @@ private slots:
 private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
-    void                                    scrollToTheBottom();
     void                                    setupControlButtons();
     void                                    setupAboutTab();
     void                                    setupHelpTab();
+    void                                    setupAnimatedBackground();
 
 private:
     Ui::MainWindow                          *ui;

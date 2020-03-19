@@ -41,6 +41,7 @@ HEADERS += \
     Keyboard.h \
     MorseCodeConverter.h \
     PushButtonHover.h \
+    Visuals.h \
     mainwindow.h \
     myrandom.h
 
