@@ -6,6 +6,7 @@
 class IConnectButton {
 public:
     virtual void            connectButton(QPushButton *) = 0;
+    virtual                 ~IConnectButton() = default;
 };
 
 

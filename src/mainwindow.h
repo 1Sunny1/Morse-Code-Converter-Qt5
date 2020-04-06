@@ -6,6 +6,8 @@
 #include "HelpButton.h"
 #include "AboutButton.h"
 #include "ConverterControlButton.h"
+#include "Sound.h"
+#include "SoundButton.h"
 
 #include <QMainWindow>
 #include <memory>
@@ -25,6 +27,12 @@ public:
 private slots:
     void                                    on_userText_textChanged();
 
+    void on_playPushButton_clicked();
+
+    void on_pausePushButton_clicked();
+
+    void on_stopPushButton_clicked();
+
 private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
@@ -32,6 +40,7 @@ private:
     void                                    setupAboutTab();
     void                                    setupHelpTab();
     void                                    setupAnimatedBackground();
+    void                                    setupSoundButtons();
 
 private:
     Ui::MainWindow                          *ui;
@@ -40,6 +49,8 @@ private:
     HelpButton *                            helpButton;
     AboutButton *                           aboutButton;
     ConverterControlButton *                converterControlButton;
+    Sound *                                 sound;
+    SoundButton *                           soundButton;
 
     bool *                                  toText;
     bool                                    isToTextButtonPressed{false};

@@ -17,7 +17,9 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    toText = new bool(false);
+    toText =    new bool(false);
+    keyboard =  new Keyboard(ui->userText, ui->stackedWidget, this);
+    sound =     new Sound(ui->convertedText, this);
 
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
@@ -34,7 +36,8 @@ MainWindow::MainWindow(QWidget *parent)
     setupAboutTab();
     setupControlButtons();
 
-    keyboard = new Keyboard(ui->userText, ui->stackedWidget, this);
+
+    //soundButton = new SoundButton(ui->convertedText, this);
     connectAllButtons();
 }
 
@@ -75,4 +78,20 @@ void MainWindow::setupHelpTab() {
 void MainWindow::setupAnimatedBackground() {
     animatedBG = new AnimatedBackground(this);
     connectAllLabels();
+}
+
+void MainWindow::setupSoundButtons() {
+
+}
+
+void MainWindow::on_playPushButton_clicked() {
+    sound->play();
+}
+
+void MainWindow::on_pausePushButton_clicked() {
+    sound->pause();
+}
+
+void MainWindow::on_stopPushButton_clicked() {
+    sound->stop();
 }

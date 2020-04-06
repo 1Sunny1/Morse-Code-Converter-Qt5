@@ -156,4 +156,12 @@ void MainWindow::connectAllButtons() {
 
     converterControlButton->connectButton(ui->toCodePushButton);
     converterControlButton->connectButton(ui->toTextPushButton);
+
+    /////////////////
+    //Sound buttons//
+    /////////////////
+
+   // soundButton->connectButton(ui->playPushButton);
+    //soundButton->connectButton(ui->pausePushButton);
+    //soundButton->connectButton(ui->stopPushButton);
 }

@@ -1,9 +1,10 @@
-QT       += core gui
+QT       += core gui \
+            svg \
+            multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++1z
-QT += svg
 
 TARGET = MorseCodeConverter
 TEMPLATE = app
@@ -26,6 +27,8 @@ SOURCES += \
     Keyboard.cpp \
     MorseCodeConverter.cpp \
     PushButtonHover.cpp \
+    Sound.cpp \
+    SoundButton.cpp \
     connectAllButtons.cpp \
     connectAllLabels.cpp \
     main.cpp \
@@ -41,6 +44,8 @@ HEADERS += \
     Keyboard.h \
     MorseCodeConverter.h \
     PushButtonHover.h \
+    Sound.h \
+    SoundButton.h \
     Visuals.h \
     mainwindow.h \
     myrandom.h

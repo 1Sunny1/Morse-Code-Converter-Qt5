@@ -49,7 +49,7 @@ QString MorseCodeConverter::TextToCode(const std::string &text) noexcept {
     return converted;
 }
 
-auto splitStr(const std::string &str) {
+auto splitString(const std::string &str) {
     std::vector<std::string> temporaryContainer;
     std::istringstream iss{ std::string(str) };
 
@@ -59,7 +59,7 @@ auto splitStr(const std::string &str) {
 
 QString MorseCodeConverter::CodeToText(const std::string &codes) noexcept {
     QString converted {""};
-    std::vector<std::string> vCodes = splitStr(codes);
+    std::vector<std::string> vCodes = splitString(codes);
     //if substr of spaces is found - insert space in converted text mr. sherlock!
     for (const auto& code : vCodes) {
         if (auto found = std::find_if(morseCodes.begin(), morseCodes.end(),

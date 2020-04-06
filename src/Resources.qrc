@@ -7,4 +7,9 @@
         <file>font/StaticBuzz.ttf</file>
         <file>font/QuiteMagicalRegular-8VA2.ttf</file>
     </qresource>
+    <qresource prefix="/sfx">
+        <file>sfx/long.wav</file>
+        <file>sfx/short.wav</file>
+        <file>sfx/break.wav</file>
+    </qresource>
 </RCC>
