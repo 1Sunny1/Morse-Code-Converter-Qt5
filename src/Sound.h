@@ -17,6 +17,9 @@ public slots:
     void                            pause();
 
 private:
+    void                            fillPlaylist(QMediaPlaylist *);
+
+private:
     QPlainTextEdit *                convertedText;
     QMediaPlayer *                  sounds;
     QMediaPlaylist *                playlist;

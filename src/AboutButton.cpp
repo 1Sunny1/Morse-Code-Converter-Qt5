@@ -26,15 +26,9 @@ void AboutButton::passAboutButtons(std::vector<QPushButton *> &_aboutButtons) {
 }
 
 void AboutButton::setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButton) {
-    if (exceptionalButton == nullptr) {
-        for (auto button : aboutButtons)
+    for(auto button : aboutButtons) {
+        if (button != exceptionalButton)
             ButtonLook::About::Default(button);
-    }
-
-    else {
-        for (auto button : aboutButtons)
-            if (exceptionalButton != button)
-                ButtonLook::About::Default(button);
     }
 }
 

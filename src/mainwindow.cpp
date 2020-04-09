@@ -19,7 +19,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     toText =    new bool(false);
     keyboard =  new Keyboard(ui->userText, ui->stackedWidget, this);
-    sound =     new Sound(ui->convertedText, this);
 
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
@@ -30,14 +29,14 @@ MainWindow::MainWindow(QWidget *parent)
 
     Visuals::hideScrollBars(std::make_pair(ui->userText, ui->convertedText), ui->about);
     ButtonLook::Standard::Pressed(ui->toCodePushButton);
+    ButtonLook::Standard::Pressed(ui->stopPushButton);
 
     setupAnimatedBackground();
     setupHelpTab();
     setupAboutTab();
     setupControlButtons();
+    setupSoundButtons();
 
-
-    //soundButton = new SoundButton(ui->convertedText, this);
     connectAllButtons();
 }
 
@@ -81,17 +80,6 @@ void MainWindow::setupAnimatedBackground() {
 }
 
 void MainWindow::setupSoundButtons() {
-
-}
-
-void MainWindow::on_playPushButton_clicked() {
-    sound->play();
-}
-
-void MainWindow::on_pausePushButton_clicked() {
-    sound->pause();
-}
-
-void MainWindow::on_stopPushButton_clicked() {
-    sound->stop();
+    std::vector<QPushButton*> buttons{ ui->playPushButton, ui->stopPushButton, ui->pausePushButton };
+    soundButton = new SoundButton(buttons, ui->convertedText, this);
 }

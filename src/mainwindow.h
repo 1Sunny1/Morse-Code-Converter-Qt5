@@ -27,12 +27,6 @@ public:
 private slots:
     void                                    on_userText_textChanged();
 
-    void on_playPushButton_clicked();
-
-    void on_pausePushButton_clicked();
-
-    void on_stopPushButton_clicked();
-
 private:
     void                                    connectAllButtons();
     void                                    connectAllLabels();
@@ -43,13 +37,12 @@ private:
     void                                    setupSoundButtons();
 
 private:
-    Ui::MainWindow                          *ui;
+    Ui::MainWindow *                        ui;
     Keyboard *                              keyboard;
     AnimatedBackground *                    animatedBG;
     HelpButton *                            helpButton;
     AboutButton *                           aboutButton;
     ConverterControlButton *                converterControlButton;
-    Sound *                                 sound;
     SoundButton *                           soundButton;
 
     bool *                                  toText;

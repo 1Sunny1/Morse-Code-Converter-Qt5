@@ -161,7 +161,7 @@ void MainWindow::connectAllButtons() {
     //Sound buttons//
     /////////////////
 
-   // soundButton->connectButton(ui->playPushButton);
-    //soundButton->connectButton(ui->pausePushButton);
-    //soundButton->connectButton(ui->stopPushButton);
+    soundButton->connectButton(ui->playPushButton);
+    soundButton->connectButton(ui->pausePushButton);
+    soundButton->connectButton(ui->stopPushButton);
 }

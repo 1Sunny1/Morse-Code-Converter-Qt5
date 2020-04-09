@@ -6,22 +6,22 @@
 
 #include <QPlainTextEdit>
 #include <QPushButton>
+#include <vector>
 
 class SoundButton final : public QObject, public IConnectButton {
     Q_OBJECT
 public:
-    explicit                    SoundButton(QPlainTextEdit *tE, QObject *parent = nullptr);
+    explicit                    SoundButton(std::vector<QPushButton*>&, QPlainTextEdit *tE, QObject *parent = nullptr);
     virtual void                connectButton(QPushButton *) override;
 
 private slots:
     void                        onButtonClick();
-    //void                        play();
-    //void                        stop();
-    //void                        pause();
+    void                        setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButton = nullptr);
 
 private:
     Sound *                     sound;
     QPlainTextEdit *            convertedText;
+    std::vector<QPushButton *>  buttons;
 };
 
 #endif // SOUNDBUTTON_H
