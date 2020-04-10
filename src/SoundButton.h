@@ -17,6 +17,7 @@ public:
 private slots:
     void                        onButtonClick();
     void                        setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButton = nullptr);
+    void                        setStopButtonPressed(QMediaPlayer::State);
 
 private:
     Sound *                     sound;

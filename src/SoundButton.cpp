@@ -6,6 +6,8 @@ SoundButton::SoundButton(std::vector<QPushButton *> &_buttons, QPlainTextEdit *t
     , convertedText(tE) {
     std::copy(_buttons.begin(), _buttons.end(), std::back_inserter(buttons));
     sound = new Sound(convertedText, parent);
+    //connect with QMediaPlayer inside Sound class
+    connect(sound, &QMediaPlayer::stateChanged, this, &SoundButton::setStopButtonPressed);
 }
 
 void SoundButton::connectButton(QPushButton *button) {
@@ -21,15 +23,24 @@ void SoundButton::onButtonClick() {
         sound->play();
 
     else if (button->text() == "Pause")
-        sound->stop();
+        sound->pause();
 
     else
-        sound->pause();
+        sound->stop();
 }
 
 void SoundButton::setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButton) {
     for(auto button : buttons) {
         if (button != exceptionalButton)
             ButtonLook::Standard::Default(button);
+    }
+}
+
+void SoundButton::setStopButtonPressed(QMediaPlayer::State state) {
+    ButtonLook::Standard::Pressed(buttons[2]);
+    if (state == QMediaPlayer::StoppedState) {
+        ButtonLook::Standard::Pressed(buttons[2]); //stop button
+        ButtonLook::Standard::Default(buttons[0]); //playbutton
+        sound->setPlayPressedFalse();
     }
 }

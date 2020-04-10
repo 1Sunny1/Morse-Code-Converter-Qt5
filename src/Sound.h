@@ -10,6 +10,7 @@ class Sound final : public QMediaPlayer {
     Q_OBJECT
 public:
     explicit                        Sound(QPlainTextEdit *textEdit, QObject *parent = nullptr);
+    void                            setPlayPressedFalse();
 
 public slots:
     void                            play();
@@ -18,15 +19,20 @@ public slots:
 
 private:
     void                            fillPlaylist(QMediaPlaylist *);
+    void                            refillPlaylist();
 
 private:
     QPlainTextEdit *                convertedText;
     QMediaPlayer *                  sounds;
     QMediaPlaylist *                playlist;
+    QString                         text;
+    int                             indexAtPause;
+
     const QUrl                      shortSound { "qrc:/sfx/sfx/short.wav" };
     const QUrl                      longSound  { "qrc:/sfx/sfx/long.wav"  };
     const QUrl                      blankSound { "qrc:/sfx/sfx/break.wav" };
     bool                            playPressed{false};
+    bool                            paused{false};
 };
 
 #endif // SOUND_H

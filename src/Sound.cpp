@@ -2,6 +2,7 @@
 
 #include <QMediaPlaylist>
 #include <QMediaContent>
+#include <iterator>
 
 Sound::Sound(QPlainTextEdit *textEdit, QObject *parent)
     : QMediaPlayer(parent)
@@ -9,40 +10,13 @@ Sound::Sound(QPlainTextEdit *textEdit, QObject *parent)
     , sounds(nullptr) {
      playlist = new QMediaPlaylist(this);
      sounds = new QMediaPlayer(this, QMediaPlayer::LowLatency);
-}
-
-void Sound::play() {
-    if (!playPressed) {
-        playPressed = true;
-        playlist->clear();   
-
-        fillPlaylist(playlist);
-        sounds->setPlaylist(playlist);
-        sounds->play();
-    }//TODO: SPEED IT UP! ...somehow
-}
-
-void Sound::stop() {
-    if (playPressed)
-        sounds->stop();
-
-    playPressed = false;
-}
-
-void Sound::pause() {
-    if (playPressed)
-        sounds->stop();
-
-    playPressed = false;
-    //save current index of text and after playing again start from this index
+     sounds->setPlaybackRate(1.2);
 }
 
 void Sound::fillPlaylist(QMediaPlaylist *playlist) {
-    QString text = convertedText->toPlainText();
+    text = convertedText->toPlainText();
     if (!text.isEmpty()) {
-        static QString::iterator soundIterator;
         for (auto character = std::begin(text); character != std::end(text); ++character) {
-            soundIterator = character;
             if(*character == '.')
                 playlist->addMedia(shortSound);
             else if (*character == '_')
@@ -52,3 +26,57 @@ void Sound::fillPlaylist(QMediaPlaylist *playlist) {
         }
     }
 }
+
+void Sound::refillPlaylist() {
+    auto character = std::begin(text);
+    std::advance(character,  indexAtPause);
+    for (; character != std::end(text); ++character) {
+        if(*character == '.')
+            playlist->addMedia(shortSound);
+        else if (*character == '_')
+            playlist->addMedia(longSound);
+        else
+            playlist->addMedia(blankSound);
+    }
+}
+
+void Sound::play() {
+    if (paused && !playPressed) {
+        playPressed = true;
+        paused = false;
+        playlist->clear();
+
+        refillPlaylist();
+        sounds->play();
+    }
+
+    else if (!playPressed) {
+        playPressed = true;
+        playlist->clear();   
+
+        fillPlaylist(playlist);
+        sounds->setPlaylist(playlist);
+        sounds->play();
+    }//TODO: SPEED IT UP! ...somehow
+}
+
+void Sound::stop() {  
+    sounds->stop();
+    playlist->clear();
+    playPressed = false;
+    indexAtPause = 0;
+}
+
+void Sound::pause() {
+    if (playPressed) {
+        paused = true;
+        playPressed = false;
+        sounds->stop();
+        indexAtPause = playlist->currentIndex();
+    }
+}
+
+void Sound::setPlayPressedFalse() {
+    playPressed = false;
+}
+
