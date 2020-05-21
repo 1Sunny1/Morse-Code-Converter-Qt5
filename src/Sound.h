@@ -11,6 +11,7 @@ class Sound final : public QMediaPlayer {
 public:
     explicit                        Sound(QPlainTextEdit *textEdit, QObject *parent = nullptr);
     void                            setPlayPressedFalse();
+    QMediaPlaylist*                 playlist() const;
 
 public slots:
     void                            play();
@@ -24,7 +25,7 @@ private:
 private:
     QPlainTextEdit *                convertedText;
     QMediaPlayer *                  sounds;
-    QMediaPlaylist *                playlist;
+    QMediaPlaylist *                playlist_;
     QString                         text;
     int                             indexAtPause;
 

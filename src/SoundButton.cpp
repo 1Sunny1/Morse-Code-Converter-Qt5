@@ -1,13 +1,13 @@
 #include "SoundButton.h"
 #include "ButtonAppearance.h"
+#include <QMediaPlaylist>
 
-SoundButton::SoundButton(std::vector<QPushButton *> &_buttons, QPlainTextEdit *tE, QObject *parent)
+SoundButton::SoundButton(std::vector<QPushButton *> const& buttons_, QPlainTextEdit *tE, QObject *parent)
     : QObject(parent)
     , convertedText(tE) {
-    std::copy(_buttons.begin(), _buttons.end(), std::back_inserter(buttons));
+    std::copy(buttons_.begin(), buttons_.end(), std::back_inserter(buttons));
     sound = new Sound(convertedText, parent);
-    //connect with QMediaPlayer inside Sound class
-    connect(sound, &QMediaPlayer::stateChanged, this, &SoundButton::setStopButtonPressed);
+    connect(sound->playlist(), &QMediaPlaylist::currentIndexChanged, this, &SoundButton::setButtonsDefaultAfterPlaying);
 }
 
 void SoundButton::connectButton(QPushButton *button) {
@@ -36,9 +36,8 @@ void SoundButton::setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButto
     }
 }
 
-void SoundButton::setStopButtonPressed(QMediaPlayer::State state) {
-    ButtonLook::Standard::Pressed(buttons[2]);
-    if (state == QMediaPlayer::StoppedState) {
+void SoundButton::setButtonsDefaultAfterPlaying(int position) {
+    if (position == -1) {
         ButtonLook::Standard::Pressed(buttons[2]); //stop button
         ButtonLook::Standard::Default(buttons[0]); //playbutton
         sound->setPlayPressedFalse();

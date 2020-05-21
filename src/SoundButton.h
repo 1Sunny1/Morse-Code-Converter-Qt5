@@ -11,13 +11,13 @@
 class SoundButton final : public QObject, public IConnectButton {
     Q_OBJECT
 public:
-    explicit                    SoundButton(std::vector<QPushButton*>&, QPlainTextEdit *tE, QObject *parent = nullptr);
+    explicit                    SoundButton(std::vector<QPushButton*> const&, QPlainTextEdit *tE, QObject *parent = nullptr);
     virtual void                connectButton(QPushButton *) override;
 
 private slots:
     void                        onButtonClick();
     void                        setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButton = nullptr);
-    void                        setStopButtonPressed(QMediaPlayer::State);
+    void                        setButtonsDefaultAfterPlaying(int position);
 
 private:
     Sound *                     sound;

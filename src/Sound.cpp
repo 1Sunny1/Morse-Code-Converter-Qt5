@@ -8,7 +8,7 @@ Sound::Sound(QPlainTextEdit *textEdit, QObject *parent)
     : QMediaPlayer(parent)
     , convertedText(textEdit)
     , sounds(nullptr) {
-     playlist = new QMediaPlaylist(this);
+     playlist_ = new QMediaPlaylist(this);
      sounds = new QMediaPlayer(this, QMediaPlayer::LowLatency);
      sounds->setPlaybackRate(1.2);
 }
@@ -32,11 +32,11 @@ void Sound::refillPlaylist() {
     std::advance(character,  indexAtPause);
     for (; character != std::end(text); ++character) {
         if(*character == '.')
-            playlist->addMedia(shortSound);
+            playlist_->addMedia(shortSound);
         else if (*character == '_')
-            playlist->addMedia(longSound);
+            playlist_->addMedia(longSound);
         else
-            playlist->addMedia(blankSound);
+            playlist_->addMedia(blankSound);
     }
 }
 
@@ -44,7 +44,7 @@ void Sound::play() {
     if (paused && !playPressed) {
         playPressed = true;
         paused = false;
-        playlist->clear();
+        playlist_->clear();
 
         refillPlaylist();
         sounds->play();
@@ -52,17 +52,18 @@ void Sound::play() {
 
     else if (!playPressed) {
         playPressed = true;
-        playlist->clear();   
+        playlist_->clear();
 
-        fillPlaylist(playlist);
-        sounds->setPlaylist(playlist);
+        fillPlaylist(playlist_);
+        sounds->setPlaylist(playlist_);
         sounds->play();
-    }//TODO: SPEED IT UP! ...somehow
+
+    }
 }
 
 void Sound::stop() {  
     sounds->stop();
-    playlist->clear();
+    playlist_->clear();
     playPressed = false;
     indexAtPause = 0;
 }
@@ -72,7 +73,7 @@ void Sound::pause() {
         paused = true;
         playPressed = false;
         sounds->stop();
-        indexAtPause = playlist->currentIndex();
+        indexAtPause = playlist_->currentIndex();
     }
 }
 
@@ -80,3 +81,6 @@ void Sound::setPlayPressedFalse() {
     playPressed = false;
 }
 
+QMediaPlaylist* Sound::playlist() const {
+    return playlist_;
+}
