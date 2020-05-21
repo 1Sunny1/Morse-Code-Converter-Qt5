@@ -13,7 +13,7 @@ void AboutButton::connectButton(QPushButton *button) {
 void AboutButton::changeContent() {
     auto button = qobject_cast<QPushButton *>(sender());
 
-    const QString content = button->text().remove(0, 2); //remove first two characters - in our case it is '?' and '\n'
+    const QString content = button->text().remove(0, 2);
     textBrowser->setText(content);
     ButtonLook::About::Pressed(button);
     setButtonsDefaultWithExceptionOf(button);

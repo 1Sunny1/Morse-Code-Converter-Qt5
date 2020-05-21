@@ -13,6 +13,7 @@ class AboutButton final : public QObject, public IConnectButton {
 public:
                                 AboutButton(QTextBrowser * tB, QGroupBox *gB, QObject *parent = nullptr);
     virtual void                connectButton(QPushButton *) override;
+
     void                        connectCloseButton(QPushButton *);
     void                        passAboutButtons(std::vector<QPushButton *> &aboutButtons);
 
