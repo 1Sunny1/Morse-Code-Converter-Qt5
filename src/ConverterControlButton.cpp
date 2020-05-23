@@ -27,7 +27,7 @@ void ConverterControlButton::swapContent() {
     QString userTextContent = userText->toPlainText();
     QString convertedTextContent = convertedText->toPlainText();
     userText->setPlainText(convertedTextContent);
-    convertedText->setPlainText(userTextContent.toUpper());
+    convertedText->setPlainText(userTextContent);
 }
 
 void ConverterControlButton::handleToTextButton(QPushButton *button) {
