@@ -11,7 +11,7 @@
 class SoundButton final : public QObject, public IConnectButton {
     Q_OBJECT
 public:
-    explicit                    SoundButton(std::vector<QPushButton*> const&, QPlainTextEdit *tE, QObject *parent = nullptr);
+    explicit                    SoundButton(std::vector<QPushButton*> const&, QPlainTextEdit *tE, QPlainTextEdit *uE, bool *toText, QObject *parent = nullptr);
     virtual void                connectButton(QPushButton *) override;
 
 private slots:
@@ -21,7 +21,6 @@ private slots:
 
 private:
     Sound *                     sound;
-    QPlainTextEdit *            convertedText;
     std::vector<QPushButton *>  buttons;
 };
 

@@ -81,5 +81,5 @@ void MainWindow::setupAnimatedBackground() {
 
 void MainWindow::setupSoundButtons() {
     std::vector<QPushButton*> buttons{ ui->playPushButton, ui->pausePushButton, ui->stopPushButton };
-    soundButton = new SoundButton(buttons, ui->convertedText, this);
+    soundButton = new SoundButton(buttons, ui->convertedText, ui->userText, toText, this);
 }

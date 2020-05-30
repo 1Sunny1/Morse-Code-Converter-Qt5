@@ -2,11 +2,10 @@
 #include "ButtonAppearance.h"
 #include <QMediaPlaylist>
 
-SoundButton::SoundButton(std::vector<QPushButton *> const& buttons_, QPlainTextEdit *tE, QObject *parent)
-    : QObject(parent)
-    , convertedText(tE) {
+SoundButton::SoundButton(std::vector<QPushButton *> const& buttons_, QPlainTextEdit *tE, QPlainTextEdit *uE, bool *toText, QObject *parent)
+    : QObject(parent) {
     std::copy(buttons_.begin(), buttons_.end(), std::back_inserter(buttons));
-    sound = new Sound(convertedText, parent);
+    sound = new Sound(tE, uE, toText, parent);
     connect(sound->playlist(), &QMediaPlaylist::currentIndexChanged, this, &SoundButton::setButtonsDefaultAfterPlaying);
 }
 

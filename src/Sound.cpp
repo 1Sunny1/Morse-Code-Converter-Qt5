@@ -4,17 +4,23 @@
 #include <QMediaContent>
 #include <iterator>
 
-Sound::Sound(QPlainTextEdit *textEdit, QObject *parent)
+Sound::Sound(QPlainTextEdit *textEdit, QPlainTextEdit *userText_, bool *toText_, QObject *parent)
     : QMediaPlayer(parent)
     , convertedText(textEdit)
-    , sounds(nullptr) {
+    , userText(userText_)
+    , sounds(nullptr)
+    , toText(toText_) {
      playlist_ = new QMediaPlaylist(this);
      sounds = new QMediaPlayer(this, QMediaPlayer::LowLatency);
      sounds->setPlaybackRate(1.2);
 }
 
 void Sound::fillPlaylist(QMediaPlaylist *playlist) {
-    text = convertedText->toPlainText();
+    if (*toText)
+        text = userText->toPlainText();
+    else
+        text = convertedText->toPlainText();
+
     if (!text.isEmpty()) {
         for (auto character = std::begin(text); character != std::end(text); ++character) {
             if(*character == '.')
