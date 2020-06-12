@@ -17,12 +17,16 @@ namespace Filter {
     }
 }
 
-class MorseCodeConverter final {
+class MorseCodeConverter final : public QObject {
+    Q_OBJECT
 public:
-    explicit                                        MorseCodeConverter() = delete;                                              
-    static QString                                  TextToCode(const std::string &) noexcept;
-    static QString                                  CodeToText(const std::string &) noexcept;
+    explicit                                        MorseCodeConverter(QObject* parent = nullptr) : QObject(parent) {}
+           QString                                  TextToCode(const std::string &) noexcept;
+           QString                                  CodeToText(const std::string &) noexcept;
     static QString                                  getRandomCode() noexcept;
+
+signals:
+    void                                            unrecognized_characters(std::string const& characters);
 
 private:
     static std::unordered_map<char, QString>        morseCodes;

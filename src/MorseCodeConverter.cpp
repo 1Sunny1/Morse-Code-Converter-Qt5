@@ -62,8 +62,10 @@ QString MorseCodeConverter::CodeToText(const std::string &codes) noexcept {
     std::vector<std::string> vCodes = splitString(codes);
 
     for (const auto& code : vCodes) {
-        if (code == "/")
+        if (code == "/") {
             converted.append(' ');
+            continue;
+        }
 
         if (auto found = std::find_if(morseCodes.begin(), morseCodes.end(),
                 [&code](const auto& value) {
@@ -72,7 +74,7 @@ QString MorseCodeConverter::CodeToText(const std::string &codes) noexcept {
             found != morseCodes.end())
             converted.append(found->first);
         else
-            continue;
+            emit unrecognized_characters(code);
     }
 
     converted = converted.toLower();

@@ -31,6 +31,7 @@ SOURCES += \
     SoundButton.cpp \
     connectAllButtons.cpp \
     connectAllLabels.cpp \
+    highlighter.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -47,6 +48,7 @@ HEADERS += \
     Sound.h \
     SoundButton.h \
     Visuals.h \
+    highlighter.h \
     mainwindow.h \
     myrandom.h
 

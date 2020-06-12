@@ -144,16 +144,6 @@ QPushButton:pressed {
      <string>Hide Keyboard</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>70</x>
-      <y>650</y>
-      <width>21</width>
-      <height>21</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="PushButtonHover" name="helpButton">
     <property name="geometry">
      <rect>
@@ -5611,17 +5601,20 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label_67">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>440</y>
-      <width>75</width>
-      <height>23</height>
+      <x>10</x>
+      <y>400</y>
+      <width>371</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <zorder>label_2</zorder>
@@ -5631,7 +5624,6 @@ QPushButton:pressed {
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
    <zorder>keyboardControlButton</zorder>
-   <zorder>graphicsView</zorder>
    <zorder>helpButton</zorder>
    <zorder>userText</zorder>
    <zorder>convertedText</zorder>
@@ -5647,7 +5639,7 @@ QPushButton:pressed {
    <zorder>stopPushButton</zorder>
    <zorder>groupBox</zorder>
    <zorder>aboutBox</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>label_67</zorder>
   </widget>
  </widget>
  <customwidgets>
