@@ -8,6 +8,8 @@
 #include "ConverterControlButton.h"
 #include "Sound.h"
 #include "SoundButton.h"
+#include "MorseCodeConverter.h"
+#include <highlighter.h>
 
 #include <QMainWindow>
 #include <memory>
@@ -26,6 +28,7 @@ public:
 
 private slots:
     void                                    on_userText_textChanged();
+    void                                    unrecognized_characters_notify(std::string const& characters);
 
 private:
     void                                    connectAllButtons();
@@ -44,6 +47,8 @@ private:
     AboutButton *                           aboutButton;
     ConverterControlButton *                converterControlButton;
     SoundButton *                           soundButton;
+    MorseCodeConverter *                    Converter;
+    Highlighter *                           highlighter;
 
     bool *                                  toText;
     bool                                    isToTextButtonPressed{false};

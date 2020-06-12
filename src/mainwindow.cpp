@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "MorseCodeConverter.h"
 #include "PushButtonHover.h"
 #include "ButtonAppearance.h"
 #include "Visuals.h"
@@ -17,8 +16,14 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    toText =    new bool(false);
-    keyboard =  new Keyboard(ui->userText, ui->stackedWidget, this);
+
+    toText =        new bool(false);
+    keyboard =      new Keyboard(ui->userText, ui->stackedWidget, this);
+    Converter =     new MorseCodeConverter(this);
+    highlighter =   new Highlighter(toText, ui->userText->document());
+
+    //connect(Converter, &MorseCodeConverter::unrecognized_characters, this, &MainWindow::unrecognized_characters_notify);
+
 
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
@@ -48,9 +53,9 @@ MainWindow::~MainWindow() {
 void MainWindow::on_userText_textChanged() {
    ui->convertedText->clear();
    if (*toText)
-       ui->convertedText->insertPlainText(MorseCodeConverter::CodeToText(ui->userText->toPlainText().toStdString()));
+       ui->convertedText->insertPlainText(Converter->CodeToText(ui->userText->toPlainText().toStdString()));
    else
-       ui->convertedText->insertPlainText(MorseCodeConverter::TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
+       ui->convertedText->insertPlainText(Converter->TextToCode(Filter::ExcludeSpecialCharacters(ui->userText->toPlainText().toStdString())));
 
    Visuals::scrollToTheBottom(ui->convertedText);
 }
@@ -82,4 +87,8 @@ void MainWindow::setupAnimatedBackground() {
 void MainWindow::setupSoundButtons() {
     std::vector<QPushButton*> buttons{ ui->playPushButton, ui->pausePushButton, ui->stopPushButton };
     soundButton = new SoundButton(buttons, ui->convertedText, ui->userText, toText, this);
+}
+
+void MainWindow::unrecognized_characters_notify(std::string const& characters) {
+    ui->label_67->setText(QString::fromStdString(characters));
 }
