@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/img">
         <file>img/warning.png</file>
+        <file>img/ghm.png</file>
     </qresource>
     <qresource prefix="/font">
         <file>font/FadeToGrey.ttf</file>

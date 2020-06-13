@@ -11,6 +11,12 @@
 
 namespace {
     const QString PLACEHOLDER_TEXT{"Type your message..."};
+    void setupGithubLink(QLabel *label) {
+        label->setText("<a href=\"https://github.com/Cyberah\"> <img src = \":/img/img/ghm.png\"></a>");
+        label->setTextFormat(Qt::RichText);
+        label->setTextInteractionFlags(Qt::TextBrowserInteraction);
+        label->setOpenExternalLinks(true);
+    }
 }
 
 MainWindow::MainWindow(QWidget *parent)
@@ -32,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->unrecognized_characters_widget->hide();
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
+    setupGithubLink(ui->githubLink);
 
     Visuals::hideScrollBars(std::make_pair(ui->userText, ui->convertedText), ui->about);
     ButtonLook::Standard::Pressed(ui->toCodePushButton);
