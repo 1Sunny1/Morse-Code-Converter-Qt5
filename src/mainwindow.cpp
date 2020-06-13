@@ -7,6 +7,7 @@
 #include <QGraphicsView>
 #include <QSize>
 #include <QPushButton>
+#include <algorithm>
 
 namespace {
     const QString PLACEHOLDER_TEXT{"Type your message..."};
@@ -22,13 +23,13 @@ MainWindow::MainWindow(QWidget *parent)
     Converter =     new MorseCodeConverter(this);
     highlighter =   new Highlighter(toText, ui->userText->document());
 
-    //connect(Converter, &MorseCodeConverter::unrecognized_characters, this, &MainWindow::unrecognized_characters_notify);
-
+    connect(ui->userText, &QPlainTextEdit::textChanged, this, &MainWindow::unrecognized_characters_notify);
 
     this->setFixedSize(QSize(1280, 720));
     ui->label_2->setGeometry(0,0, 1280, 720);
     ui->groupBox->hide();
     ui->aboutBox->hide();
+    ui->unrecognized_characters_widget->hide();
     ui->userText->setPlaceholderText(PLACEHOLDER_TEXT);
     ui->convertedText->setReadOnly(true);
 
@@ -89,6 +90,38 @@ void MainWindow::setupSoundButtons() {
     soundButton = new SoundButton(buttons, ui->convertedText, ui->userText, toText, this);
 }
 
-void MainWindow::unrecognized_characters_notify(std::string const& characters) {
-    ui->label_67->setText(QString::fromStdString(characters));
+QString identify_characters_fill(std::string const& content) {
+    using namespace std::string_literals;
+    auto const codeCharacters{"._ /"s};
+    std::size_t iterations = 0;
+    QString unrecognized{""};
+
+    for(auto const& character : content) {
+        if (!std::any_of(codeCharacters.begin(), codeCharacters.end(), [&character](auto const& code){ return character == code; })) {
+            if(iterations % 25 == 0)
+                unrecognized += "\n";
+
+            unrecognized += character;
+            ++iterations;
+        }
+    }
+
+    return unrecognized;
+}
+
+void MainWindow::unrecognized_characters_notify() {
+    if (*toText) {
+        auto const content = ui->userText->toPlainText().toStdString();
+        QString unrecognizedCharsStr = identify_characters_fill(content);
+
+        if (!unrecognizedCharsStr.isEmpty()) {
+            ui->unrecognized_characters_widget->show();
+            if (unrecognizedCharsStr.size() < 100)
+                ui->label_67->setText(unrecognizedCharsStr);
+        }
+        else
+            ui->unrecognized_characters_widget->hide();
+    }
+    else
+        ui->unrecognized_characters_widget->hide();
 }
