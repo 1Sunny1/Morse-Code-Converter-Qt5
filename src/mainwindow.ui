@@ -36,8 +36,8 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>600</y>
+      <x>10</x>
+      <y>670</y>
       <width>71</width>
       <height>41</height>
      </rect>
@@ -3012,8 +3012,8 @@ QPushButton:pressed {
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>1220</x>
-      <y>690</y>
+      <x>1210</x>
+      <y>680</y>
       <width>1121</width>
       <height>691</height>
      </rect>
@@ -3032,8 +3032,8 @@ QPushButton:pressed {
      </property>
      <property name="geometry">
       <rect>
-       <x>0</x>
-       <y>0</y>
+       <x>-10</x>
+       <y>10</y>
        <width>1121</width>
        <height>691</height>
       </rect>
@@ -5601,21 +5601,127 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_67">
+   <widget class="QGroupBox" name="unrecognized_characters_widget">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>-10</x>
       <y>400</y>
-      <width>371</width>
-      <height>121</height>
+      <width>341</width>
+      <height>241</height>
      </rect>
     </property>
-    <property name="text">
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	border: none;
+}</string>
+    </property>
+    <property name="title">
      <string/>
     </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
+    <widget class="QLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>321</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background-color: #ffb2b2;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;
+	color:  #cb4335;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>-5</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_69">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>20</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background-color: #ff614c;
+	color: white;
+	border: 1px solid white;/*#ed6f5e;*/
+	border-radius: 15px;
+	font-size: 25px;
+}</string>
+     </property>
+     <property name="text">
+      <string>Unrecognized characters:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_68">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>23</y>
+       <width>25</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Resources.qrc">:/img/img/warning.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>216</y>
+       <width>321</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	background-color: #ffb2b2;
+	border: 1px solid red;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	color:  #cb4335;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="margin">
+      <number>-5</number>
+     </property>
+    </widget>
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
@@ -5639,7 +5745,7 @@ QPushButton:pressed {
    <zorder>stopPushButton</zorder>
    <zorder>groupBox</zorder>
    <zorder>aboutBox</zorder>
-   <zorder>label_67</zorder>
+   <zorder>unrecognized_characters_widget</zorder>
   </widget>
  </widget>
  <customwidgets>
@@ -5649,6 +5755,8 @@ QPushButton:pressed {
    <header>PushButtonHover.h</header>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
