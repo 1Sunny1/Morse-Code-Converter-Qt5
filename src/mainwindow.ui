@@ -36,7 +36,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>240</x>
       <y>670</y>
       <width>71</width>
       <height>41</height>
@@ -5723,6 +5723,40 @@ QPushButton:pressed {
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="githubLink">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>660</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Author</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>3</number>
+    </property>
+    <property name="statusTip">
+     <string>Author</string>
+    </property>
+    <property name="whatsThis">
+     <string>Author</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="Resources.qrc">:/img/img/ghm.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>fff</cstring>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>label_3</zorder>
@@ -5746,6 +5780,7 @@ QPushButton:pressed {
    <zorder>groupBox</zorder>
    <zorder>aboutBox</zorder>
    <zorder>unrecognized_characters_widget</zorder>
+   <zorder>githubLink</zorder>
   </widget>
  </widget>
  <customwidgets>
