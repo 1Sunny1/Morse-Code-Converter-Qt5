@@ -37,8 +37,8 @@ void SoundButton::setButtonsDefaultWithExceptionOf(QPushButton *exceptionalButto
 
 void SoundButton::setButtonsDefaultAfterPlaying(int position) {
     if (position == -1) {
-        ButtonLook::Standard::Pressed(buttons[2]); //stop button
-        ButtonLook::Standard::Default(buttons[0]); //playbutton
+        ButtonLook::Standard::Pressed(buttons[2]);
+        ButtonLook::Standard::Default(buttons[0]);
         sound->setPlayPressedFalse();
     }
 }

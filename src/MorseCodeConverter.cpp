@@ -73,8 +73,6 @@ QString MorseCodeConverter::CodeToText(const std::string &codes) noexcept {
                 });
             found != morseCodes.end())
             converted.append(found->first);
-        //else
-        //    emit unrecognized_characters(code);
     }
 
     converted = converted.toLower();

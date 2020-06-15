@@ -24,10 +24,12 @@ void HelpButton::connectHelpButtonTab(QPushButton *helpButton) {
 void HelpButton::onButtonClick() {
     auto button = qobject_cast<QPushButton*>(sender());
     QString content = userText->toPlainText();
+
     if(userText->toPlainText().isEmpty())
         userText->setPlainText(button->text());
     else
         userText->setPlainText(content + " " + button->text());
+
     groupBox->hide();
     ButtonLook::Standard::Pressed(helpButton);
 }

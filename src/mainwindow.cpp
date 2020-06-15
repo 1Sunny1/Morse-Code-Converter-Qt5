@@ -112,7 +112,6 @@ QString identify_characters_fill(std::string const& content) {
             ++iterations;
         }
     }
-
     return unrecognized;
 }
 

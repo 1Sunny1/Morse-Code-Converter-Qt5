@@ -15,7 +15,6 @@ public:
 
 public:
     static QPropertyAnimation*       createAnimation(QLabel *);
-    static void                      setBlurEffect(QLabel *);
 
 private slots:
     void                             onCurrentLoopChanged(int);

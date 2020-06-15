@@ -25,7 +25,6 @@ QPropertyAnimation *AnimatedBackground::createAnimation(QLabel *label) {
     const int wHeight = 720;
     const int wWidth = 1280;
     label->setText(MorseCodeConverter::getRandomCode());
-    //setBlurEffect(label);
 
     int randomHeight = random::number<int>(wHeight - wHeight + 100, wHeight);
     int randomStartPos = random::number<int>(wWidth + 100, wWidth + 300);
@@ -39,10 +38,4 @@ QPropertyAnimation *AnimatedBackground::createAnimation(QLabel *label) {
     animation->start();
 
     return animation;
-}
-
-void AnimatedBackground::setBlurEffect(QLabel *label) {
-    //QGraphicsBlurEffect *effect = new QGraphicsBlurEffect(label) ;
-    //effect->setBlurHints(QGraphicsBlurEffect::PerformanceHint);
-    //label->setGraphicsEffect(effect);
 }
