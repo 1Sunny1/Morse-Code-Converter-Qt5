@@ -2,6 +2,7 @@
     <qresource prefix="/img">
         <file>img/warning.png</file>
         <file>img/ghm.png</file>
+        <file>img/mc_icon.png</file>
     </qresource>
     <qresource prefix="/font">
         <file>font/FadeToGrey.ttf</file>
