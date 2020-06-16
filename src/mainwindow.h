@@ -28,7 +28,7 @@ public:
 
 private slots:
     void                                    on_userText_textChanged();
-    void                                    unrecognized_characters_notify(/*std::string const& characters*/);
+    void                                    unrecognized_characters_notify();
 
 private:
     void                                    connectAllButtons();
