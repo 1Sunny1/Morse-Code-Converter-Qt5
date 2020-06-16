@@ -3012,8 +3012,8 @@ QPushButton:pressed {
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>1210</x>
-      <y>680</y>
+      <x>90</x>
+      <y>10</y>
       <width>1121</width>
       <height>691</height>
      </rect>
@@ -3032,8 +3032,8 @@ QPushButton:pressed {
      </property>
      <property name="geometry">
       <rect>
-       <x>-10</x>
-       <y>10</y>
+       <x>0</x>
+       <y>0</y>
        <width>1121</width>
        <height>691</height>
       </rect>

@@ -31,7 +31,7 @@ void HelpButton::onButtonClick() {
         userText->setPlainText(content + " " + button->text());
 
     groupBox->hide();
-    ButtonLook::Standard::Pressed(helpButton);
+    ButtonLook::Standard::Default(helpButton);
 }
 
 void HelpButton::onCloseButtonClick() {
