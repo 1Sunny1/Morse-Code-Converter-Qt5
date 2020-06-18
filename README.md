@@ -18,6 +18,6 @@ cd build
 qmake ../Morse-Code-Converter-Qt5/MorseCodeConverter.pro
 make
 ```
-### Licence
+### License
 MIT
 
